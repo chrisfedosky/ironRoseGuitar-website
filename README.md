@@ -4,23 +4,6 @@ website for guitarist
 project/
 ├── index.html
 ├── lessons.html
-├── css/
-│   ├── global.css
-│   └── pages/
-│       ├── home.css
-│       └── lessons.css
-├── js/
-│   ├── includes.js
-│   └── nav.js
-└── partials/
-├── header.html
-└── footer.html
-
-TAKE 2:
-
-project/
-├── index.html
-├── lessons.html
 ├── about.html
 ├── faq.html
 ├── contact.html
@@ -37,5 +20,5 @@ project/
 │   ├── nav.js
 │   └── form.js
 └── partials/
-├── header.html
-└── footer.html
+    ├── header.html
+    └── footer.html

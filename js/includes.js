@@ -5,7 +5,7 @@
    SCRIPT ORDER in every HTML page — includes.js must be first:
      <script src="/js/includes.js"></script>
      <script src="/js/nav.js"></script>
-     <script src="/js/form.js"></script>  (contact.html only)
+     <script src="/js/form.js"></script> (contact.html only)
 
    ACTIVE LINK: automatically marks the current page link
    in the nav — no manual class="active" needed in header.html.
@@ -38,11 +38,11 @@
            /index.html, /lessons.html, /about.html,
            /faq.html, /contact.html
     */
-    var raw     = window.location.pathname.replace(/\/$/, '');
-    var current = (raw === '' || raw === '/') ? '/index.html' : raw;
+    let raw     = window.location.pathname.replace(/\/$/, '');
+    let current = (raw === '' || raw === '/') ? '/index.html' : raw;
 
     document.querySelectorAll('.nav-links a').forEach(function (link) {
-      var href = link.getAttribute('href').replace(/\/$/, '');
+      let href = link.getAttribute('href').replace(/\/$/, '');
       if (href === current) {
         link.classList.add('active');
         link.setAttribute('aria-current', 'page');
