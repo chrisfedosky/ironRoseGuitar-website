@@ -1,0 +1,39 @@
+/* ============================================================
+   home.css — grid layout only
+   Areas: hero, trust, benefit, review, faq, cta
+   ============================================================ */
+
+/* Mobile: single column */
+.bento-grid {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hero"
+    "trust"
+    "benefit"
+    "review"
+    "faq"
+    "cta";
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "hero    hero"
+      "trust   trust"
+      "benefit review"
+      "faq     cta";
+  }
+}
+
+/* Desktop: 3 columns, trust spans right */
+@media (min-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "hero    hero    trust"
+      "benefit review  trust"
+      "benefit faq     cta";
+  }
+}

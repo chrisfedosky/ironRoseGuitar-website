@@ -1,0 +1,43 @@
+/* ============================================================
+   faq.css — grid layout only
+   Areas: header, q1, q2, q3, q4, q5, q6, cta
+   ============================================================ */
+
+/* Mobile: single column, questions stack in order */
+.bento-grid {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "q1"
+    "q2"
+    "q3"
+    "q4"
+    "q5"
+    "q6"
+    "cta";
+}
+
+/* Tablet: questions pair up side by side */
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header  header"
+      "q1      q2"
+      "q3      q4"
+      "q5      q6"
+      "cta     cta";
+  }
+}
+
+/* Desktop: 3 questions per row */
+@media (min-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "header  header  header"
+      "q1      q2      q3"
+      "q4      q5      q6"
+      "cta     cta     cta";
+  }
+}

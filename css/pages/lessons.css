@@ -1,0 +1,42 @@
+/* ============================================================
+   lessons.css — grid layout only
+   Areas: hero, format, style1, style2, pricing, faq, cta
+   ============================================================ */
+
+/* Mobile: single column */
+.bento-grid {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hero"
+    "format"
+    "style1"
+    "style2"
+    "pricing"
+    "faq"
+    "cta";
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "hero     hero"
+      "format   format"
+      "style1   style2"
+      "pricing  pricing"
+      "faq      cta";
+  }
+}
+
+/* Desktop: 3 columns, format spans right */
+@media (min-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "hero     hero     format"
+      "style1   style2   format"
+      "pricing  pricing  cta"
+      "faq      faq      cta";
+  }
+}

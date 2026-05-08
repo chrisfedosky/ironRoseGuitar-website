@@ -1,0 +1,36 @@
+/* ============================================================
+   contact.css — grid layout only
+   Areas: hero, form, expect, trust
+   ============================================================ */
+
+/* Mobile: single column, form first after hero */
+.bento-grid {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "hero"
+    "form"
+    "expect"
+    "trust";
+}
+
+/* Tablet: form left, supporting info stacks right */
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "hero    hero"
+      "form    expect"
+      "form    trust";
+  }
+}
+
+/* Desktop: form gets more width, info column right */
+@media (min-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "hero    hero"
+      "form    expect"
+      "form    trust";
+  }
+}

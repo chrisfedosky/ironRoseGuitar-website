@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Lesson — Sarah Plays Guitar</title>
+  <meta name="description" content="Book your free first guitar lesson with Sarah. Flexible scheduling for busy moms — online and in-person available.">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/pages/contact.css">
+</head>
+<body>
+
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <div class="bento-grid">
+
+      <!-- HERO -->
+      <div class="card card-hero" style="grid-area: hero">
+        <span class="eyebrow">Let's get started</span>
+        <h1>Book your free first lesson</h1>
+        <p>Fill out the form and I'll reply within 24 hours to find a time that works for you. No commitment, no pressure.</p>
+      </div>
+
+      <!-- FORM -->
+      <div class="card" style="grid-area: form; justify-content: flex-start;">
+        <h2 style="margin-bottom: 1.5rem;">Tell me about yourself</h2>
+
+        <!--
+          NETLIFY FORM — three things Netlify requires:
+          1. data-netlify="true"
+          2. name="booking" on the form tag
+          3. <input type="hidden" name="form-name" value="booking">
+        -->
+        <form
+          name="booking"
+          method="POST"
+          action="/thanks.html"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          novalidate
+          id="bookingForm"
+        >
+          <!-- Required hidden input — do not remove -->
+          <input type="hidden" name="form-name" value="booking">
+
+          <!-- Honeypot spam trap — hidden from humans, bots fill it in -->
+          <div class="form-honeypot" aria-hidden="true">
+            <label>Leave blank: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </div>
+
+          <!-- Name -->
+          <div class="form-group">
+            <label class="form-label" for="name">
+              Your name <span class="form-required" aria-hidden="true">*</span>
+            </label>
+            <input
+              class="form-input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Sarah Johnson"
+              required
+              autocomplete="name"
+            >
+            <span class="form-error" id="name-error" role="alert"></span>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label class="form-label" for="email">
+              Email address <span class="form-required" aria-hidden="true">*</span>
+            </label>
+            <input
+              class="form-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+              autocomplete="email"
+            >
+            <span class="form-error" id="email-error" role="alert"></span>
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label class="form-label" for="phone">
+              Phone number <span class="form-optional">(optional)</span>
+            </label>
+            <input
+              class="form-input"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(608) 555-0123"
+              autocomplete="tel"
+            >
+          </div>
+
+          <!-- Lesson format -->
+          <div class="form-group">
+            <label class="form-label" for="lesson-type">
+              Lesson format <span class="form-required" aria-hidden="true">*</span>
+            </label>
+            <select class="form-select" id="lesson-type" name="lesson-type" required>
+              <option value="" disabled selected>Choose a format…</option>
+              <option value="online">Online (video call)</option>
+              <option value="in-person">In-person — Fitchburg, WI</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+            <span class="form-error" id="lesson-type-error" role="alert"></span>
+          </div>
+
+          <!-- Experience -->
+          <div class="form-group">
+            <label class="form-label">
+              Experience level <span class="form-required" aria-hidden="true">*</span>
+            </label>
+            <div class="form-radio-group" role="radiogroup" aria-required="true">
+              <label class="form-radio">
+                <input type="radio" name="experience" value="complete-beginner" required>
+                <span>Complete beginner</span>
+              </label>
+              <label class="form-radio">
+                <input type="radio" name="experience" value="some-experience">
+                <span>A little experience</span>
+              </label>
+              <label class="form-radio">
+                <input type="radio" name="experience" value="intermediate">
+                <span>Intermediate — want to improve</span>
+              </label>
+            </div>
+            <span class="form-error" id="experience-error" role="alert"></span>
+          </div>
+
+          <!-- Preferred days -->
+          <div class="form-group">
+            <label class="form-label">
+              Preferred days <span class="form-optional">(check all that apply)</span>
+            </label>
+            <div class="form-checkbox-group">
+              <label class="form-checkbox">
+                <input type="checkbox" name="days" value="weekday-morning">
+                <span>Weekday mornings</span>
+              </label>
+              <label class="form-checkbox">
+                <input type="checkbox" name="days" value="weekday-evening">
+                <span>Weekday evenings</span>
+              </label>
+              <label class="form-checkbox">
+                <input type="checkbox" name="days" value="saturday">
+                <span>Saturday</span>
+              </label>
+              <label class="form-checkbox">
+                <input type="checkbox" name="days" value="sunday">
+                <span>Sunday</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label class="form-label" for="message">
+              Anything else? <span class="form-optional">(optional)</span>
+            </label>
+            <textarea
+              class="form-textarea"
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Goals, questions, songs you'd love to play…"
+            ></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+            Send my booking request
+          </button>
+
+        </form>
+      </div>
+
+      <!-- WHAT HAPPENS NEXT -->
+      <div class="card card-muted" style="grid-area: expect; justify-content: flex-start;">
+        <span class="eyebrow">What happens next</span>
+        <h3>Three easy steps</h3>
+        <div class="expect-steps">
+          <div class="expect-step">
+            <div class="step-number">1</div>
+            <div>
+              <strong>I'll reply within 24 hours</strong>
+              <p>Usually much sooner — I check messages morning and evening.</p>
+            </div>
+          </div>
+          <div class="expect-step">
+            <div class="step-number">2</div>
+            <div>
+              <strong>We'll find your time slot</strong>
+              <p>I'll send a few options that fit your schedule.</p>
+            </div>
+          </div>
+          <div class="expect-step">
+            <div class="step-number">3</div>
+            <div>
+              <strong>Your first lesson is free</strong>
+              <p>No payment until you decide to continue.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRUST -->
+      <div class="card card-benefit" style="grid-area: trust; justify-content: flex-start;">
+        <span class="eyebrow">Not ready yet?</span>
+        <h3>No pressure at all</h3>
+        <p>Feel free to <a href="/faq.html">read the FAQ</a> or <a href="/about.html">learn more about me</a> first. I'm here when you're ready.</p>
+        <div class="trust-mini">
+          <div><strong>200+</strong><span>students taught</span></div>
+          <div><strong>★ 4.9</strong><span>average rating</span></div>
+          <div><strong>Free</strong><span>first lesson</span></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <script src="/js/includes.js"></script>
+  <script src="/js/nav.js"></script>
+  <script src="/js/form.js"></script>
+</body>
+</html>
