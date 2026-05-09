@@ -223,7 +223,6 @@ main {
 
 .card-benefit {
   border-left: 4px solid var(--primary);
-  border-radius: 0 var(--radius) var(--radius) 0;
   background: var(--white);
   justify-content: flex-start;
 }
