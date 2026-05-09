@@ -267,8 +267,8 @@ main {
 .btn:hover  { opacity: 0.88; text-decoration: none; }
 .btn:active { transform: scale(0.97); }
 
-.btn-primary { background: var(--primary); color: var(--white); border-color: var(--primary); }
-.btn-white   { background: var(--white);  color: var(--brown); }
+.btn-primary { background: var(--accent-light); color: var(--white); border-color: var(--accent); }
+.btn-white   { background: var(--accent-light);  color: var(--white); }
 .btn-outline { background: transparent; border-color: rgba(255,255,255,0.5); color: var(--white); }
 
 /* ── 11. Card eyebrow ── */
@@ -283,7 +283,7 @@ main {
 }
 
 /* ── 12. Stars ── */
-.stars { color: var(--primary); font-size: 0.9rem; margin-bottom: 0.4rem; letter-spacing: 0.1em; }
+.stars { color: var(--accent); font-size: 0.9rem; margin-bottom: 0.4rem; letter-spacing: 0.1em; }
 .reviewer { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic; }
 
 /* ── 13. Footer ── */
