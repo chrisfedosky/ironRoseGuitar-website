@@ -283,7 +283,7 @@ main {
 }
 
 /* ── 12. Stars ── */
-.stars { color: var(--accent); font-size: 0.9rem; margin-bottom: 0.4rem; letter-spacing: 0.1em; }
+.stars { color: var(--accent-light); font-size: 0.9rem; margin-bottom: 0.4rem; letter-spacing: 0.1em; }
 .reviewer { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic; }
 
 /* ── 13. Footer ── */
