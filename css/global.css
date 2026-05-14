@@ -7,19 +7,37 @@ img, video { max-width: 100%; display: block; }
 
 /* ── 3. Variables ── */
 :root {
-  --brown:        hsl(2, 53%, 12%);
-  --brown-mid:    hsl(2, 48%, 24%);
-  --primary:       hsl(2, 65%, 46%);/*refactor var name*/
-  --primary-light: hsl(2, 65%, 66%);/*refactor var name*/
-  --accent:       hsl(108, 54%, 28%);/* new var name */
-  --accent-light: hsl(108, 54%, 48%);/* new var name */
-  --cream:        hsl(2, 79%, 96%);
-  --cream-dark:   hsl(2, 49%, 90%);
-  --gray:         hsl(2, 10%, 38%);
-  --gray-light:   hsl(2, 30%, 87%);
-  --text:         hsl(2, 58%, 7%);
-  --text-muted:   hsl(2, 12%, 43%);
+  --primary-dark:     hsl(2, 53%, 12%);
+  --primary-mid:      hsl(2, 48%, 24%);
+  --primary:          hsl(2, 65%, 46%);
+  --primary-light:    hsl(2, 65%, 66%);
+  --accent:           hsl(108, 54%, 28%);
+  --accent-light:     hsl(108, 54%, 48%);
+  --tertiary:         hsl(35, 75%, 45%);
+  --tertiary-light:   hsl(35, 75%, 65%);
+  --bg-light:         hsl(2, 79%, 97%);
+  --bg:               hsl(2, 79%, 93%);
+  --bg-dark:          hsl(2, 79%, 87%);
+  /*--gray:           hsl(2, 10%, 38%);*//*possibly remove if no instances effected*?
+  /*--gray-light:     hsl(2, 30%, 87%);*/
+  --text:             hsl(2, 58%, 7%);
+  --text-muted:       hsl(2, 12%, 43%);
   --white:        hsl(0, 0%, 100%);
+
+  --shadow-s:
+  inset 0 1px 2px hsla(0, 0%, 100%, 0.1),
+  0 1px 2px hsla(0, 0%, 0%, 0.05),
+  0 2px 4px hsla(0, 0%, 0%, 0.01);
+  --shadow-m:
+  inset 0 1px 2px hsla(0, 0%, 100%, 0.1),
+  0 2px 4px hsla(0, 0%, 0%, 0.05),
+  0 4px 8px hsla(0, 0%, 0%, 0.1);
+  --shadow-l:
+  inset 0 1px 2px hsla(0, 0%, 100%, 0.1),
+  0 4px 6px hsla(0, 0%, 0%, 0.05),
+  0 6px 10px hsla(0, 0%, 0%, 0.1);
+
+
 
   --radius:    14px;
   --gap:       clamp(10px, 1.5vw, 16px);
@@ -32,7 +50,7 @@ html { font-size: 100%; scroll-behavior: smooth; -webkit-text-size-adjust: 100%;
 
 body {
   font-family: 'Source Sans 3', sans-serif;
-  background: var(--cream);
+  background: var(--bg-light);
   color: var(--text);
   line-height: 1.6;
   display: grid;
@@ -63,7 +81,7 @@ main {
   flex-direction: column;
   gap: 0.75rem;
   padding: 1rem var(--pad);
-  background: var(--brown);
+  background: var(--primary-dark);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -174,7 +192,7 @@ main {
   border-radius: var(--radius);
   padding: clamp(1.25rem, 3vw, 2rem);
   background: var(--white);
-  border: 1px solid var(--gray-light);
+  border: 1px solid var(--text-muted);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -183,8 +201,8 @@ main {
 }
 
 .card-hero {
-  background: var(--brown);
-  border-color: var(--brown);
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
   min-height: 260px;
   justify-content: flex-end;
   position: relative;
@@ -195,7 +213,7 @@ main {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 70% 50%, #5a3220 0%, var(--brown) 70%);
+  background: radial-gradient(ellipse at 70% 50%, #5a3220 0%, var(--primary-dark) 70%);
   opacity: 0.6;
 }
 
@@ -206,8 +224,8 @@ main {
 .card-hero p  { color: rgba(255,255,255,0.75); }
 
 .card-trust {
-  background: var(--cream-dark);
-  border-color: var(--gray-light);
+  background: var(--bg-dark);
+  border-color: var(--text-muted);
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -218,7 +236,7 @@ main {
 }
 
 .trust-stat { text-align: center; }
-.trust-stat strong { display: block; font-size: 1.3rem; font-weight: 700; color: var(--brown); font-family: 'Lora', serif; }
+.trust-stat strong { display: block; font-size: 1.3rem; font-weight: 700; color: var(--primary-dark); font-family: 'Lora', serif; }
 .trust-stat span   { font-size: 0.75rem; color: var(--text-muted); }
 
 .card-benefit {
@@ -236,11 +254,11 @@ main {
 .card-cta h3,
 .card-cta p { color: var(--white); }
 
-.card-muted { background: var(--cream-dark); border-color: var(--gray-light); }
+.card-muted { background: var(--bg-dark); border-color: var(--text-muted); }
 
 .card-dark {
-  background: var(--brown-mid);
-  border-color: var(--brown-mid);
+  background: var(--primary-mid);
+  border-color: var(--primary-mid);
 }
 
 .card-dark h2,
@@ -292,7 +310,7 @@ main {
   flex-direction: column;
   gap: 1.5rem;
   padding: 2.5rem var(--pad);
-  background: var(--brown);
+  background: var(--primary-dark);
   color: rgba(255,255,255,0.6);
 }
 
@@ -357,8 +375,8 @@ main {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 1rem;
   color: var(--text);
-  background: var(--cream);
-  border: 1px solid var(--gray-light);
+  background: var(--bg-light);
+  border: 1px solid var(--text-muted);
   border-radius: 8px;
   transition: border-color 0.15s, box-shadow 0.15s;
   appearance: none;
@@ -385,7 +403,7 @@ main {
   background-position: right 0.85rem center;
   padding-right: 2.5rem;
   cursor: pointer;
-  background-color: var(--cream);
+  background-color: var(--bg-light);
 }
 
 .form-radio-group,
@@ -478,5 +496,5 @@ main {
 }
 
 .trust-mini div  { display: flex; flex-direction: column; gap: 0.1rem; }
-.trust-mini strong { font-size: 1.1rem; font-weight: 700; color: var(--brown); font-family: 'Lora', serif; display: block; }
+.trust-mini strong { font-size: 1.1rem; font-weight: 700; color: var(--primary-dark); font-family: 'Lora', serif; display: block; }
 .trust-mini span   { font-size: 0.75rem; color: var(--text-muted); }
