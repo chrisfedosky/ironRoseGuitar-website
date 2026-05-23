@@ -333,6 +333,7 @@ main {
   color: rgba(255,255,255,0.6);
 }
 
+
 .footer-logo { font-family: 'Lora', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 0.4rem; }
 .footer-logo span { color: var(--primary-light); }
 .footer-tagline { font-size: 0.85rem; color: rgba(255,255,255,0.5); line-height: 1.6; }
