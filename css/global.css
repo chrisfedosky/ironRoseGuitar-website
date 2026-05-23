@@ -96,6 +96,7 @@ main {
 
 .brand {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 12px;
 }
@@ -333,6 +334,13 @@ main {
   color: rgba(255,255,255,0.6);
 }
 
+.footer-brand-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: .75rem;
+}
 
 .footer-logo { font-family: 'Lora', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); margin-bottom: 0.4rem; }
 .footer-logo span { color: var(--primary-light); }
