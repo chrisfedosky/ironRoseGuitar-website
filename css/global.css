@@ -13,6 +13,8 @@ img, video { max-width: 100%; display: block; }
   --primary-light:    hsl(2, 65%, 66%);
   --accent:           hsl(108, 54%, 28%);
   --accent-light:     hsl(108, 54%, 48%);
+  --accent-secondary: hsl(190, 60%, 35%);
+  --accent-secondary-light: hsl(190, 60%, 55%);
   --tertiary:         hsl(35, 75%, 45%);
   --tertiary-light:   hsl(35, 75%, 65%);
   --bg-light:         hsl(2, 79%, 97%);
@@ -305,9 +307,23 @@ main {
 .btn:hover  { opacity: 0.88; text-decoration: none; }
 .btn:active { transform: scale(0.97); }
 
-.btn-primary { background: var(--accent-light); color: var(--white); border-color: var(--accent); }
-.btn-white   { background: var(--accent-light);  color: var(--white); }
-.btn-outline { background: transparent; border-color: rgba(255,255,255,0.5); color: var(--white); }
+.btn-primary {
+  background: var(--accent-light);
+  color: var(--white);
+  border-color: var(--accent);
+}
+
+.btn-secondary {
+  background: var(--accent-secondary-light);
+  color: var(--white);
+  border-color: var(--accent-secondary);
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: rgba(255,255,255,0.5);
+  color: var(--white);
+}
 
 /* ── 11. Card eyebrow ── */
 .eyebrow {
