@@ -273,12 +273,12 @@ main {
 
 .list-benefit {
   padding: clamp(1.25rem, 3vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
 }
 
-.list-item-benefit {
-  padding: clamp(.5rem, 3vw, 2rem);
-
-}
+.list-item-benefit {}
 
 
 .card-cta {
