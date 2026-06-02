@@ -267,6 +267,20 @@ main {
   justify-content: flex-start;
 }
 
+.card-benefit h2 {
+  text-align: center;
+}
+
+.list-benefit {
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.list-item-benefit {
+  padding: clamp(.5rem, 3vw, 2rem);
+
+}
+
+
 .card-cta {
   background: var(--primary);
   border-color: var(--primary);
