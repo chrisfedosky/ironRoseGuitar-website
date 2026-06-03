@@ -301,6 +301,8 @@ main {
 .card-dark h3,
 .card-dark p { color: var(--white); }
 
+.card-format {}
+
 /* ── 10. Buttons ── */
 .btn {
   display: inline-flex;
