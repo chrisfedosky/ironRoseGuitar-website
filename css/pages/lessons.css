@@ -8,8 +8,8 @@
   grid-template-columns: 1fr;
   grid-template-areas:
     "hero"
+    "confidence"
     "format"
-    "style1"
     "style2"
     "pricing"
     "faq"
@@ -22,8 +22,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "hero     hero"
-      "format   format"
-      "style1   style2"
+      "confidence   confidence"
+      "format   style2"
       "pricing  pricing"
       "faq      cta";
   }
@@ -34,8 +34,8 @@
   .bento-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "hero     hero     format"
-      "style1   style2   format"
+      "hero     hero     confidence"
+      "format   style2   confidence"
       "pricing  pricing  cta"
       "faq      faq      cta";
   }
