@@ -1,4 +1,5 @@
 /* ── 1. Font ── */
+/*-- Apply Lora or other  font locally NO URL */
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
 
 /* ── 2. Reset ── */
@@ -20,8 +21,6 @@ img, video { max-width: 100%; display: block; }
   --bg-light:         hsl(2, 79%, 97%);
   --bg:               hsl(2, 79%, 93%);
   --bg-dark:          hsl(2, 79%, 87%);
-  /*--gray:           hsl(2, 10%, 38%);*//*possibly remove if no instances effected*?
-  /*--gray-light:     hsl(2, 30%, 87%);*/
   --text:             hsl(2, 58%, 7%);
   --text-muted:       hsl(2, 12%, 43%);
   --white:        hsl(0, 0%, 100%);
@@ -39,8 +38,6 @@ img, video { max-width: 100%; display: block; }
   0 4px 6px hsla(0, 0%, 0%, 0.05),
   0 6px 10px hsla(0, 0%, 0%, 0.1);
 
-
-
   --radius:    14px;
   --gap:       clamp(10px, 1.5vw, 16px);
   --pad:       clamp(1rem, 4vw, 2.5rem);
@@ -51,6 +48,7 @@ img, video { max-width: 100%; display: block; }
 html { font-size: 100%; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
 body {
+  /* Should this match the OG font? maybe via @font face? ¡Lora is not in the assets folder!*/
   font-family: 'Source Sans 3', sans-serif;
   background: var(--bg-light);
   color: var(--text);
@@ -59,7 +57,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
-
+/* ¡Lora is not in the assets folder! */
 h1, h2, h3 { font-family: 'Lora', serif; line-height: 1.2; }
 h1 { font-size: clamp(1.8rem, 5vw, 3rem);   font-weight: 700; }
 h2 { font-size: clamp(1.3rem, 3vw, 1.9rem); font-weight: 600; }
@@ -259,7 +257,7 @@ main {
 
 .trust-stat { text-align: center; }
 .trust-stat strong { display: block; font-size: 1.3rem; font-weight: 700; color: var(--primary-dark); font-family: 'Lora', serif; }
-.trust-stat span   { font-size: 0.75rem; color: var(--text-muted); }
+.trust-stat span   { font-size: 1rem; color: var(--text-muted); }
 
 .card-benefit {
   border-left: 4px solid var(--primary);
