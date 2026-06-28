@@ -44,6 +44,19 @@
       <!-- 2. Confidence builder -->
       <div class="card" style="grid-area: confidence">
         <span class="eyebrow">The Motivation</span>
+        <!-- <picture> with webp & jpg fallback -->
+        <picture>
+          <!-- The Browser checks if it can handle WebP (Smallest file size) -->
+          <source srcset="assets/images/Lessons_Selah_zoom.webp">
+
+          <!-- Fallback: If the browser doesn't know what WebP is, it uses this JPEG -->
+          <img src="assets/images/Lessons_Selah_zoom-fallback.jpeg"
+               alt="_____?????"
+               width="800"
+               height="600"
+               loading="lazy"
+               style="max-width: 100%; height: auto;">
+        </picture><!-- how do I resolve the height and width? -->
         <div>
           <h2>Built for Momentum, Not Just Mechanics</h2>
           <p><strong>Never Too Late:</strong> We skip the stuffy academic hurdles to get you playing music you love immediately.</p>

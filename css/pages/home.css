@@ -3,9 +3,9 @@
   grid-template-columns: 1fr;
   grid-template-areas:
     "hero"
+    "review"
     "trust"
     "benefit"
-    "review"
     "faq"
     "cta";
 }

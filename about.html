@@ -46,7 +46,19 @@
       <!-- PHOTO placeholder -->
       <div class="card card-profile-pic" style="grid-area: photo; min-height: 280px; justify-content: center; align-items: center;">
         <span class="eyebrow" style="text-align: center;">Recording session @ Trout Recording Studio, BKLYN</span>
-        <img src="assets/images/Hero_Crop1.webp">
+        <!-- <picture> with webp & jpg fallback -->
+        <picture>
+          <!-- The Browser checks if it can handle WebP (Smallest file size) -->
+          <source srcset="assets/images/About_profile_pic.webp" type="image/webp">
+
+          <!-- Fallback: If the browser doesn't know what WebP is, it uses this JPEG -->
+          <img src="assets/images/About_profile_pic-fallback.jpg"
+                  alt="_____?????"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                  style="max-width: 100%; height: auto;">
+        </picture><!-- how do I resolve the height and width? -->
       </div>
 
       <!-- STORY -->
@@ -75,6 +87,51 @@
           <li><strong>Multi-Instrumentalist Background:</strong> Deep roots in upright bass, drums, and singer-songwriter duos.</li>
           <li><strong>Specialized Instruction:</strong> Rock, Metal, Pop, Songwriting, and Singer-Songwriter accompaniment.</li>
         </ul>
+
+        <div class="card-multi-instrument-strip">
+          <!-- <picture> with webp & jpg fallback -->
+          <!-- pic 1 -->
+          <picture>
+            <!-- The Browser checks if it can handle WebP (Smallest file size) -->
+            <source srcset="assets/images/About_multi_inst1.webp" type="image/webp">
+
+            <!-- Fallback: If the browser doesn't know what WebP is, it uses this JPEG -->
+            <img src="assets/images/About_multi_inst1-fallback.jpeg"
+                 alt="_____?????"
+                 width="800"
+                 height="600"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+          </picture><!-- how do I resolve the height and width? -->
+          <!-- <picture> with webp & jpg fallback -->
+          <!-- pic 2 -->
+          <picture>
+            <!-- The Browser checks if it can handle WebP (Smallest file size) -->
+            <source srcset="assets/images/About_multi_inst2.webp" type="image/webp">
+
+            <!-- Fallback: If the browser doesn't know what WebP is, it uses this JPEG -->
+            <img src="assets/images/About_multi_inst2.1-fallback.jpg"
+                 alt="_____?????"
+                 width="800"
+                 height="600"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+          </picture><!-- how do I resolve the height and width? -->
+          <!-- <picture> with webp & jpg fallback -->
+          <!-- pic 3 -->
+          <picture>
+            <!-- The Browser checks if it can handle WebP (Smallest file size) -->
+            <source srcset="assets/images/About_multi_inst3.webp" type="image/webp">
+
+            <!-- Fallback: If the browser doesn't know what WebP is, it uses this JPEG -->
+            <img src="assets/images/About_multi_inst3-fallback.jpg"
+                 alt="_____?????"
+                 width="800"
+                 height="600"
+                 loading="lazy"
+                 style="max-width: 100%; height: auto;">
+          </picture><!-- how do I resolve the height and width? -->
+        </div>
         <div class="stars" style="margin-top: 1rem;">★★★★★</div>
         <p style="font-size: 0.85rem;">"Thank you Chris for making the guitar fun for me!""</p>
         <div class="reviewer">— Samanta L., adult beginner.</div>

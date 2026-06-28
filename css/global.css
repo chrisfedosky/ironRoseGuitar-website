@@ -308,7 +308,13 @@ main {
   font-size: 0.8rem;
 }
 
-
+.card-multi-instrument-strip {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
 /* ── 9.1 Images ── */
 
 
