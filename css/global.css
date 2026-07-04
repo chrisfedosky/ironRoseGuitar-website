@@ -212,11 +212,12 @@ main {
 .card {
   border-radius: var(--radius);
   padding: clamp(1.25rem, 3vw, 2rem);
-  background: var(--white);
+  /*background: var(--white);*/
   border: 1px solid var(--text-muted);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  /* flex may be unnecessary, target individual cards?*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: flex-end;*/
   height: 100%;
   min-height: 120px;
 }
@@ -225,7 +226,10 @@ main {
   background: var(--primary-dark);
   border-color: var(--primary-dark);
   min-height: 260px;
-  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .25rem;
   position: relative;
   overflow: hidden;
 }
@@ -244,9 +248,22 @@ main {
 .card-hero p  { color: var(--white); }
 .card-hero p  { color: rgba(255,255,255,0.75); }
 
+.card2 {
+  background: var(--bg);
+  border-color: var(--primary-dark);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .25rem;/* this is why there was no gap between flex items */
+  position: relative;
+  overflow: hidden;
+}
+
 .card-trust {
   background: var(--bg-dark);
   border-color: var(--text-muted);
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
