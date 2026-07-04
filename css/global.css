@@ -229,7 +229,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: .25rem;
+  gap: .5rem;
   position: relative;
   overflow: hidden;
 }
@@ -242,11 +242,18 @@ main {
   opacity: 0.6;
 }
 
-.card-hero > * { position: relative; z-index: 1; }
+.card-hero > * {
+  position: relative; z-index: 1;
+}
+
 .card-hero h1,
 .card-hero h2,
-.card-hero p  { color: var(--white); }
-.card-hero p  { color: rgba(255,255,255,0.75); }
+.card-hero p  {
+  color: var(--white);
+}
+.card-hero p  {
+  color: rgba(255,255,255,0.75);
+}
 
 .card2 {
   background: var(--bg);
@@ -255,10 +262,17 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: .25rem;/* this is why there was no gap between flex items */
+  gap: .35rem;/* this is why there was no gap between flex items */
   position: relative;
   overflow: hidden;
 }
+
+.card2 h2 {
+  margin-bottom: .5rem;
+}
+
+
+
 
 .card-trust {
   background: var(--bg-dark);
@@ -277,13 +291,13 @@ main {
 .trust-stat strong { display: block; font-size: 1.3rem; font-weight: 700; color: var(--primary-dark); font-family: 'Lora', serif; }
 .trust-stat span   { font-size: 1rem; color: var(--text-muted); }
 
-.card-benefit {
-  border-left: 4px solid var(--primary);
-  background: var(--white);
-  justify-content: flex-start;
-}
+/*.card-benefit {*/
+/*  border-left: 4px solid var(--primary);*/
+/*  background: var(--white);*/
+/*  justify-content: flex-start;*/
+/*}*/
 
-.card-benefit h2 {
+.card3 h2 {
   text-align: center;
 }
 
@@ -300,13 +314,24 @@ main {
 .card-cta {
   background: var(--primary);
   border-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .35rem;/* this is why there was no gap between flex items */
+  position: relative;
+  overflow: hidden;
 }
 
 .card-cta h2,
 .card-cta h3,
-.card-cta p { color: var(--white); }
+.card-cta p {
+  color: var(--white);
+}
 
-.card-muted { background: var(--bg-dark); border-color: var(--text-muted); }
+.card-muted {
+  background: var(--bg-dark);
+  border-color: var(--text-muted);
+}
 
 .card-dark {
   background: var(--primary-mid);
@@ -334,6 +359,23 @@ main {
   margin-top: 1rem;
 }
 
+/* ------  Reviews --  */
+.review-quote {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .25rem;
+}
+
+.review-stars {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .25rem;
+}
+
+/* ── 9.1 Images  & Icons── */
+
 .student-pic-gallery {
   display: flex;
   justify-content: space-between;
@@ -341,7 +383,6 @@ main {
   align-items: center;
   margin-top: 1rem;
 }
-/* ── 9.1 Images  & Icons── */
 
 .my-icon {
   width: 24px;
@@ -349,7 +390,6 @@ main {
   fill: currentColor;
   stroke: currentColor;
 }
-
 
 /* ── 10. Buttons ── */
 .btn {
@@ -375,6 +415,7 @@ main {
   background: var(--accent-light);
   color: var(--white);
   border-color: var(--accent);
+  margin-top: .5rem;
 }
 
 .btn-secondary {
@@ -396,13 +437,18 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--primary-light);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
   display: block;
 }
 
 /* ── 12. Stars ── */
-.stars { color: var(--accent-light); font-size: 0.9rem; margin-bottom: 0.4rem; letter-spacing: 0.1em; }
-.reviewer { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic; }
+.stars {
+  color: var(--accent-light); font-size: 0.9rem; letter-spacing: 0.1em;
+}
+
+.reviewer {
+  font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;
+}
 
 /* ── 13. Footer ── */
 .site-footer {
