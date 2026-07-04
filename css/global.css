@@ -50,7 +50,7 @@ html { font-size: 100%; scroll-behavior: smooth; -webkit-text-size-adjust: 100%;
 body {
   /* Should this match the OG font? maybe via @font face? ¡Lora is not in the assets folder!*/
   font-family: 'Source Sans 3', sans-serif;
-  background: var(--bg-light);
+  background: var(--bg-dark);
   color: var(--text);
   line-height: 1.6;
   display: grid;
@@ -256,7 +256,7 @@ main {
 }
 
 .card2 {
-  background: var(--bg);
+  background: var(--bg-light);
   border-color: var(--primary-dark);
   min-height: 260px;
   display: flex;
@@ -271,11 +271,25 @@ main {
   margin-bottom: .5rem;
 }
 
+.card3 {
+  background: var(--bg-light);
+  border-color: var(--primary-dark);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .35rem;/* this is why there was no gap between flex items */
+  position: relative;
+  overflow: hidden;
+}
 
+.card3 h2 {
+  text-align: center;
+}
 
 
 .card-trust {
-  background: var(--bg-dark);
+  background: var(--bg-light);
   border-color: var(--text-muted);
   display: flex;
   flex-direction: row;
@@ -287,9 +301,21 @@ main {
   padding-block: 1.25rem;
 }
 
-.trust-stat { text-align: center; }
-.trust-stat strong { display: block; font-size: 1.3rem; font-weight: 700; color: var(--primary-dark); font-family: 'Lora', serif; }
-.trust-stat span   { font-size: 1rem; color: var(--text-muted); }
+.trust-stat {
+  text-align: center;
+}
+
+.trust-stat strong {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  font-family: 'Lora', serif;
+}
+.trust-stat span {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
 
 /*.card-benefit {*/
 /*  border-left: 4px solid var(--primary);*/
@@ -297,9 +323,7 @@ main {
 /*  justify-content: flex-start;*/
 /*}*/
 
-.card3 h2 {
-  text-align: center;
-}
+
 
 .list-benefit {
   padding: clamp(1.25rem, 3vw, 2rem);
@@ -367,12 +391,13 @@ main {
   gap: .25rem;
 }
 
-.review-stars {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: .25rem;
-}
+/* might be unnecessary and unused ---------------- */
+/*.review-stars {*/
+/*  display: flex;*/
+/*  justify-content: flex-start;*/
+/*  align-items: center;*/
+/*  gap: .25rem;*/
+/*}*/
 
 /* ── 9.1 Images  & Icons── */
 
