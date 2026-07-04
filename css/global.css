@@ -102,9 +102,10 @@ main {
 }
 
 .header-logo {
-  width: 48px;
-  border-radius: 50%;
+  width: 45px;
+  border-radius: 50%;/* logo is still not centered and there is too much whitespace around it. */
   /*object-fit: fill;*/
+  /*align-items: center;*/
   height: auto;
   background: var(--bg-light);
 }
