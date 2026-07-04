@@ -287,7 +287,6 @@ main {
   text-align: center;
 }
 
-
 .card-trust {
   background: var(--bg-light);
   border-color: var(--text-muted);
@@ -322,8 +321,6 @@ main {
 /*  background: var(--white);*/
 /*  justify-content: flex-start;*/
 /*}*/
-
-
 
 .list-benefit {
   padding: clamp(1.25rem, 3vw, 2rem);
