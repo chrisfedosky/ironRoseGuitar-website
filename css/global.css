@@ -341,8 +341,14 @@ main {
   align-items: center;
   margin-top: 1rem;
 }
-/* ── 9.1 Images ── */
+/* ── 9.1 Images  & Icons── */
 
+.my-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  stroke: currentColor;
+}
 
 
 /* ── 10. Buttons ── */
