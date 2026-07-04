@@ -366,7 +366,7 @@ main {
 .card-format {}
 
 .card-profile-pic {
-  background: var(--bg-dark);
+  background: var(--bg-light);
   padding: 2px 6px;
   border-radius: 4px;
   font-size: 0.8rem;
