@@ -448,9 +448,9 @@ main {
 }
 
 .btn-secondary {
-  background: var(--accent-secondary-light);
+  background: var(--tertiary-light);
   color: var(--white);
-  border-color: var(--accent-secondary);
+  border-color: var(--tertiary);
 }
 
 .btn-outline {
@@ -606,7 +606,7 @@ main {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 1rem;
   color: var(--text);
-  background: var(--bg-light);
+  background: var(--bg);
   border: 1px solid var(--text-muted);
   border-radius: 8px;
   transition: border-color 0.15s, box-shadow 0.15s;
