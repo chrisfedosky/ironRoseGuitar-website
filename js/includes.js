@@ -12,32 +12,22 @@
    ============================================================ */
 (function () {
 
-  /* ── Inject a partial into a target element ── */
   function inject(targetId, filePath, callback) {
     const target = document.getElementById(targetId);
     if (!target) return;
     fetch(filePath)
-      .then(function (r) {
-        if (!r.ok) { console.warn('includes.js: could not load ' + filePath); return ''; }
-        return r.text();
-      })
-      .then(function (html) {
-        target.innerHTML = html;
-        if (typeof callback === 'function') callback();
-      })
-      .catch(function (e) { console.warn('includes.js: fetch failed for ' + filePath, e); });
+        .then(function (r) {
+          if (!r.ok) { console.warn('includes.js: could not load ' + filePath); return ''; }
+          return r.text();
+        })
+        .then(function (html) {
+          target.innerHTML = html;
+          if (typeof callback === 'function') callback();
+        })
+        .catch(function (e) { console.warn('includes.js: fetch failed for ' + filePath, e); });
   }
 
-  /* ── Mark the active nav link ── */
   function setActiveLink() {
-    /*
-       Normalize the current path:
-       - Strip trailing slash
-       - Treat bare "/" as "/index.html"
-       - Works for all five pages:
-           /index.html, /lessons.html, /about.html,
-           /faq.html, /contact.html
-    */
     let raw     = window.location.pathname.replace(/\/$/, '');
     let current = (raw === '' || raw === '/') ? '/index.html' : raw;
 
@@ -53,8 +43,8 @@
     });
   }
 
-  /* ── Run ── */
   inject('site-header', '/partials/header.html', setActiveLink);
   inject('site-footer', '/partials/footer.html');
 
 })();
+
