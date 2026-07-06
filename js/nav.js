@@ -1,7 +1,3 @@
-/* ============================================================
-   nav.js — hamburger menu toggle
-   Toggles .nav-open on <body>. CSS does all visual work.
-   ============================================================ */
 (function () {
   const toggle = document.querySelector('.nav-toggle');
   const body   = document.body;
