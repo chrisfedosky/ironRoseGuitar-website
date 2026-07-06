@@ -1,15 +1,3 @@
-/* ============================================================
-   includes.js — injects header.html and footer.html partials
-   into the empty shell elements on every page.
-
-   SCRIPT ORDER in every HTML page — includes.js must be first:
-     <script src="/js/includes.js"></script>
-     <script src="/js/nav.js"></script>
-     <script src="/js/form.js"></script> (contact.html only)
-
-   ACTIVE LINK: automatically marks the current page link
-   in the nav — no manual class="active" needed in header.html.
-   ============================================================ */
 (function () {
 
   function inject(targetId, filePath, callback) {
