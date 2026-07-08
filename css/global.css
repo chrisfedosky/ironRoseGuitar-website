@@ -216,6 +216,7 @@ main {
   height: 100%;
   min-height: 120px;
 }
+
 /* ── Card-Hero ── */
 .card-hero {
   background: var(--primary-dark);
@@ -259,9 +260,13 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: .5rem;
+  gap: .75rem;
   position: relative;
   overflow: hidden;
+}
+
+.card-feature h1 {
+
 }
 
 /* ── Card Feature 2 ── */
@@ -272,10 +277,21 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: .35rem;/* this is why there was no gap between flex items */
+  gap: 1rem;
   position: relative;
   overflow: hidden;
 }
+
+.card-feature2 h2 {
+  text-align: center;
+  margin-top: .5rem;
+  font-size: 1.5rem;
+}
+
+.card-feature2 h3 {
+  margin-bottom: 1rem;
+}
+
 /* ── Card Form ── */
 .card-form {
   background: var(--bg-light);
@@ -366,6 +382,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: .75rem;
   position: relative;
   overflow: hidden;
@@ -391,11 +408,23 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: .35rem;/* this is why there was no gap between flex items */
+  gap: .75rem;
   position: relative;
   overflow: hidden;
 }
 
+.card-pricing-packaging h2 {
+  margin-top: .5rem;
+  font-size: 1.5rem;
+}
+
+.card-pricing-packaging h3 {
+  margin-bottom: 1rem;
+}
+
+.asterisk {
+
+}
 
 /* ── Card-Qn ── */
 .card-qn {
@@ -484,7 +513,7 @@ main {
 /* ------  Reviews --  */
 .review-quote {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: .25rem;
 }
