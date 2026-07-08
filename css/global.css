@@ -212,12 +212,7 @@ main {
 .card {
   border-radius: var(--radius);
   padding: clamp(1.25rem, 3vw, 2rem);
-  /*background: var(--white);*/
   border: 1px solid var(--text-muted);
-  /* flex may be unnecessary, target individual cards?*/
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: flex-end;*/
   height: 100%;
   min-height: 120px;
 }
@@ -256,7 +251,7 @@ main {
 }
 
 /* ── Card-Feature ── */
-/* -- style card feature diff from card2 ---*/
+
 .card-feature {
   background: var(--bg-light);
   border-color: var(--primary-dark);
@@ -264,7 +259,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: .35rem;/* this is why there was no gap between flex items */
+  gap: .5rem;
   position: relative;
   overflow: hidden;
 }
@@ -333,6 +328,11 @@ main {
 
 .trust-stat {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .trust-stat strong {
