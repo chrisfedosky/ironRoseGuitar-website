@@ -269,9 +269,20 @@ main {
   overflow: hidden;
 }
 
-
-/* ── Card2 ── */
-.card2 {
+/* ── Card Feature 2 ── */
+.card-feature2 {
+  background: var(--bg-light);
+  border-color: var(--primary-dark);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .35rem;/* this is why there was no gap between flex items */
+  position: relative;
+  overflow: hidden;
+}
+/* ── Card Form ── */
+.card-form {
   background: var(--bg-light);
   border-color: var(--primary-dark);
   min-height: 260px;
@@ -283,7 +294,7 @@ main {
   overflow: hidden;
 }
 
-.card2 h2 {
+.card-form h2 {
   margin-bottom: .5rem;
 }
 
@@ -353,7 +364,6 @@ main {
 .list-item-benefit {}
 
 /* ── Card-Info ── */
-/* -- style card feature diff from card2 ---*/
 .card-info {
   background: var(--bg-light);
   border-color: var(--primary-dark);
@@ -365,6 +375,21 @@ main {
   position: relative;
   overflow: hidden;
 }
+
+
+/* ── Card Pricing & Packaging ── */
+.card-pricing-packaging {
+  background: var(--bg-light);
+  border-color: var(--primary-dark);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .35rem;/* this is why there was no gap between flex items */
+  position: relative;
+  overflow: hidden;
+}
+
 
 /* ── Card-Qn ── */
 .card-qn {
