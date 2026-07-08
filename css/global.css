@@ -221,7 +221,7 @@ main {
   height: 100%;
   min-height: 120px;
 }
-
+/* ── Card-Hero ── */
 .card-hero {
   background: var(--primary-dark);
   border-color: var(--primary-dark);
@@ -255,6 +255,22 @@ main {
   color: rgba(255,255,255,0.75);
 }
 
+/* ── Card-Feature ── */
+/* -- style card feature diff from card2 ---*/
+.card-feature {
+  background: var(--bg-light);
+  border-color: var(--primary-dark);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .35rem;/* this is why there was no gap between flex items */
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* ── Card2 ── */
 .card2 {
   background: var(--bg-light);
   border-color: var(--primary-dark);
@@ -271,7 +287,9 @@ main {
   margin-bottom: .5rem;
 }
 
-.card3 {
+/* ── Card-Bullet ── */
+
+.card-bullet {
   background: var(--bg-light);
   border-color: var(--primary-dark);
   min-height: 260px;
@@ -283,10 +301,12 @@ main {
   overflow: hidden;
 }
 
-.card3 h2 {
+.card-bullet h2 {
   text-align: center;
+  margin-top: .5rem;
 }
 
+/* ── Card-Trust ── */
 .card-trust {
   background: var(--bg-light);
   border-color: var(--text-muted);
@@ -316,6 +336,7 @@ main {
   color: var(--text-muted);
 }
 
+/* ── Card-Benefit ── */
 /*.card-benefit {*/
 /*  border-left: 4px solid var(--primary);*/
 /*  background: var(--white);*/
@@ -331,7 +352,61 @@ main {
 
 .list-item-benefit {}
 
+/* ── Card-Info ── */
+/* -- style card feature diff from card2 ---*/
+.card-info {
+  background: var(--bg-light);
+  border-color: var(--primary-dark);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .35rem;/* this is why there was no gap between flex items */
+  position: relative;
+  overflow: hidden;
+}
 
+/* ── Card-Qn ── */
+.card-qn {
+  background: var(--bg-light);
+  border-color: var(--primary-dark);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .35rem;/* this is why there was no gap between flex items */
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Card Contact Steps ── */
+.card-contact-steps {
+  background: var(--bg-light);
+  border-color: var(--primary-dark);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .35rem;/* this is why there was no gap between flex items */
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* ── Card Trust Mini ── */
+.card-trust-mini {
+  background: var(--bg-light);
+  border-color: var(--primary-dark);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .35rem;/* this is why there was no gap between flex items */
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Card-CTA ── */
 .card-cta {
   background: var(--primary);
   border-color: var(--primary);
@@ -349,6 +424,7 @@ main {
   color: var(--white);
 }
 
+/* card-muted might be unnecessary */
 .card-muted {
   background: var(--bg-dark);
   border-color: var(--text-muted);
@@ -396,7 +472,7 @@ main {
 /*  gap: .25rem;*/
 /*}*/
 
-/* ── 9.1 Images  & Icons── */
+/* ── 9.1 Images, Icons, bullet points── */
 
 .student-pic-gallery {
   display: flex;
@@ -418,6 +494,10 @@ main {
   justify-content: flex-start;
   gap: .25rem;
   align-items: center;
+}
+/* style bullets here -->*/
+ul {
+  /*list-style-type: circle;*/
 }
 
 /* ── 10. Buttons ── */
@@ -457,6 +537,10 @@ main {
   background: transparent;
   border-color: rgba(255,255,255,0.5);
   color: var(--white);
+}
+
+.btn-bullet_wrapper {
+  text-align: center;
 }
 
 /* ── 11. Card eyebrow ── */
