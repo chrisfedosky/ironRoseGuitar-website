@@ -455,12 +455,6 @@ main {
   color: var(--white);
 }
 
-/* card-muted might be unnecessary */
-.card-muted {
-  background: var(--bg-dark);
-  border-color: var(--text-muted);
-}
-
 .card-dark {
   background: var(--primary-mid);
   border-color: var(--primary-mid);
