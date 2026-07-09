@@ -880,6 +880,7 @@ ul {
 .trust-mini div  {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   gap: 0.1rem;
 }
 .trust-mini strong {

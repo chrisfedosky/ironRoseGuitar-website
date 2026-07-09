@@ -20,7 +20,7 @@
     grid-template-areas:
       "hero    hero"
       "form    expect"
-      "form    trust";
+      "trust    trust";
   }
 }
 
@@ -31,6 +31,6 @@
     grid-template-areas:
       "hero    hero"
       "form    expect"
-      "form    trust";
+      "trust    trust";
   }
 }
