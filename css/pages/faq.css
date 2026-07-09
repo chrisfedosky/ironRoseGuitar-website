@@ -7,7 +7,7 @@
 .bento-grid {
   grid-template-columns: 1fr;
   grid-template-areas:
-    "header"
+    "hero"
     "q1"
     "q2"
     "q3"
@@ -22,7 +22,7 @@
   .bento-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "header  header"
+      "hero  hero"
       "q1      q2"
       "q3      q4"
       "q5      q6"
@@ -35,7 +35,7 @@
   .bento-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "header  header  header"
+      "hero  hero  hero"
       "q1      q2      q3"
       "q4      q5      q6"
       "cta     cta     cta";

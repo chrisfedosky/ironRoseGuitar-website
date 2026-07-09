@@ -30,9 +30,9 @@
   .bento-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "hero hero format"
+      "hero hero hero"
       "confidence confidence format"
-      "logistics logistics logistics"
-      "pricing pricing cta";
+      "pricing pricing format"
+      "logistics logistics cta";
   }
 }

@@ -16,8 +16,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "hero    hero"
-      "trust   trust"
       "review review"
+      "trust   trust"
       "benefit benefit"
       "faq     cta";
   }
@@ -28,8 +28,9 @@
   .bento-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "hero hero trust"
+      "hero hero hero"
       "review review benefit"
+      "trust trust cta"
       "faq faq cta";
   }
 }
