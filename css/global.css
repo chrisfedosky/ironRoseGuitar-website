@@ -517,6 +517,13 @@ main {
   gap: .25rem;
 }
 
+blockquote {
+  padding-inline: 2rem;
+}
+
+.asterisk {
+  padding-inline: 2rem;
+}
 /* might be unnecessary and unused ---------------- */
 /*.review-stars {*/
 /*  display: flex;*/
