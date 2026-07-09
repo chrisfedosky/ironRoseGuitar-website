@@ -17,7 +17,8 @@
     grid-template-areas:
       "hero    hero"
       "trust   trust"
-      "review benefit"
+      "review review"
+      "benefit benefit"
       "faq     cta";
   }
 }
