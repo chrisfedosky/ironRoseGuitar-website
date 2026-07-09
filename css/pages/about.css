@@ -7,8 +7,7 @@
 .bento-grid {
   grid-template-columns: 1fr;
   grid-template-areas:
-    "intro"
-    "photo"
+    "hero"
     "story"
     "values"
     "creds"
@@ -20,7 +19,7 @@
   .bento-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "intro   intro"
+      "hero   hero"
       "photo   story"
       "values  creds"
       "cta     cta";
@@ -32,7 +31,7 @@
   .bento-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "intro   intro   photo"
+      "hero   hero   hero"
       "story   values  photo"
       "story   creds   cta";
   }
