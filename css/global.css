@@ -444,10 +444,15 @@ main {
   min-height: 260px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: .35rem;
+  justify-content: space-evenly;
+  gap: .5rem;
   position: relative;
   overflow: hidden;
+}
+
+.card-qn h2 {
+  margin-top: .5rem;
+  font-size: 1.35rem;
 }
 
 /* ── Card Contact Steps ── */
@@ -565,8 +570,8 @@ blockquote {
 }
 
 .my-icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
   stroke: currentColor;
 }
@@ -574,10 +579,12 @@ blockquote {
 .icon-wrapper {
   display: flex;
   justify-content: flex-start;
-  gap: .25rem;
+  gap: .75rem;
   align-items: center;
 }
-/* style bullets here -->*/
+
+
+/* style bullets here ____________________-->*/
 ul {
   /*list-style-type: circle;*/
 }
@@ -641,7 +648,9 @@ ul {
 
 /* ── 12. Stars ── */
 .stars {
-  color: var(--accent-light); font-size: 0.9rem; letter-spacing: 0.1em;
+  color: var(--accent-light);
+  font-size: 1.15rem;
+  letter-spacing: 0.15rem;
 }
 
 .reviewer {
