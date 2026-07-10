@@ -241,12 +241,13 @@ main {
 .card-hero > * {
   position: relative; z-index: 1;
 }
-
+/* hero is picked out white text color */
 .card-hero h1,
 .card-hero h2,
 .card-hero p  {
   color: var(--white);
 }
+/* gives text a touch of transparency */
 .card-hero p  {
   color: rgba(255,255,255,0.75);
 }
@@ -260,13 +261,15 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: .75rem;
-  position: relative;
+  gap: .35rem;
+  position: relative; /*what does this do?*/
   overflow: hidden;
 }
 
-.card-feature h1 {
-
+.card-feature h2 {
+  text-align: center;
+  margin-top: .5rem;
+  font-size: 1.5rem;
 }
 
 
@@ -278,7 +281,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  gap: .35rem;
   position: relative;
   overflow: hidden;
 }
@@ -307,7 +310,9 @@ main {
 }
 
 .card-form h2 {
-  margin-bottom: .5rem;
+  text-align: center;
+  margin-top: .5rem;
+  font-size: 1.5rem;
 }
 
 /* ── Card-Bullet ── */
@@ -328,6 +333,17 @@ main {
   text-align: center;
   margin-top: .5rem;
   font-size: 1.5rem;
+}
+
+.list-benefit {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.list-item-benefit {
+
 }
 
 /* ── Card-Trust ── */
@@ -365,14 +381,7 @@ main {
   color: var(--text-muted);
 }
 
-.list-benefit {
-  padding: clamp(1.25rem, 3vw, 2rem);
-  display: flex;
-  flex-direction: column;
-  gap: .75rem;
-}
 
-.list-item-benefit {}
 
 /* ── Card-Info ── */
 .card-info {
@@ -382,7 +391,7 @@ main {
   min-height: 260px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: .75rem;
   position: relative;
   overflow: hidden;
