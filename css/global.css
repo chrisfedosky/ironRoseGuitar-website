@@ -383,7 +383,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   gap: .75rem;
   position: relative;
   overflow: hidden;
@@ -612,13 +611,16 @@ ul {
 
 /* ── 11. Card eyebrow ── */
 .eyebrow {
+  display: flex;
+  /*justify-content: flex-start;*/
+  align-items: flex-start;
   font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--primary-light);
   margin-bottom: 0.35rem;
-  display: block;
+
 }
 
 /* ── 12. Stars ── */
