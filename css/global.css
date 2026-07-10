@@ -584,10 +584,15 @@ blockquote {
   object-fit: contain;
   object-position: center;
   display: block;
+  border: 1px solid black;
 }
 
 .feature-main {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: .5rem;
 }
 
 
@@ -780,6 +785,23 @@ ul {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.3);
 }
+
+/*------------------questionable queries related to feature image --------------------------*/
+/* Tablet media query */
+
+@media (min-width: 768px) {
+  .feature-image-container {
+    height: 350px; /* Adjusts fixed height for larger screens */
+  }
+} /* Desktop media query */
+
+@media (min-width: 1024px) {
+  .feature-image-container {
+    height: 450px; /* Adjusts fixed height for desktop views */
+  }
+}
+
+
 
 @media (min-width: 768px) {
   .site-footer {
