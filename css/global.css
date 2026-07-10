@@ -587,6 +587,12 @@ blockquote {
   fill: currentColor;
   stroke: currentColor;
 }
+.my-icon-mini {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  stroke: currentColor;
+}
 
 .icon-wrapper {
   display: flex;
@@ -911,7 +917,7 @@ ul {
 /* ── 17. Trust mini stats (contact.html) ── */
 .trust-mini {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   gap: 1.25rem;
   flex-wrap: wrap;
