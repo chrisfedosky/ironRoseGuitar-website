@@ -16,8 +16,8 @@ img, video { max-width: 100%; display: block; }
   --accent-light:     hsl(108, 54%, 48%);
   --accent-secondary: hsl(190, 60%, 35%);
   --accent-secondary-light: hsl(190, 60%, 55%);
-  --tertiary:         hsl(35, 75%, 45%);
-  --tertiary-light:   hsl(35, 75%, 65%);
+  --tertiary:         hsl(25, 75%, 45%);
+  --tertiary-light:   hsl(25, 75%, 65%);
   --bg-light:         hsl(2, 79%, 97%);
   --bg:               hsl(2, 79%, 93%);
   --bg-dark:          hsl(2, 79%, 87%);
@@ -595,7 +595,6 @@ blockquote {
   gap: .5rem;
 }
 
-
 .student-pic-gallery {
   display: flex;
   justify-content: space-between;
@@ -648,8 +647,14 @@ ul {
   width: fit-content;
 }
 
-.btn:hover  { opacity: 0.88; text-decoration: none; }
-.btn:active { transform: scale(0.97); }
+.btn:hover  {
+  opacity: 0.88;
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
 
 .btn-primary {
   background: var(--accent-light);
@@ -659,10 +664,20 @@ ul {
 }
 
 .btn-secondary {
-  background: var(--tertiary-light);
+  background: var(--primary-light);
   color: var(--white);
-  border-color: var(--tertiary);
+  border-color: var(--primary);
 }
+
+.btn-secondary:hover  {
+  opacity: 0.88;
+  text-decoration: none;
+  background: var(--tertiary-light);
+  color: var(--text);
+  border-color: var(--accent-secondary-light)
+}
+
+
 
 .btn-outline {
   background: transparent;
