@@ -462,12 +462,17 @@ main {
   min-height: 260px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: .35rem;
   position: relative;
   overflow: hidden;
 }
 
+.card-contact-steps h3 {
+  text-align: center;
+  margin-top: .5rem;
+  font-size: 1.35rem;
+}
 
 /* ── Card Trust Mini ── */
 .card-trust-mini {
@@ -481,6 +486,13 @@ main {
   position: relative;
   overflow: hidden;
 }
+
+.card-trust-mini h3 {
+  text-align: center;
+  margin-top: .5rem;
+  font-size: 1.25rem;
+}
+
 
 /* ── Card-CTA ── */
 .card-cta {
@@ -899,6 +911,8 @@ ul {
 /* ── 17. Trust mini stats (contact.html) ── */
 .trust-mini {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   gap: 1.25rem;
   flex-wrap: wrap;
   margin-top: 1.1rem;
@@ -907,6 +921,8 @@ ul {
 .trust-mini div  {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
   gap: 0.1rem;
 }
@@ -917,4 +933,7 @@ ul {
   font-family: 'Lora', serif;
   display: block;
 }
-.trust-mini span   { font-size: 0.75rem; color: var(--text-muted); }
+.trust-mini span   {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
