@@ -578,12 +578,20 @@ blockquote {
 
 /* parent container */
 .feature-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+
   width: 100%;
-  height: 375px;
+  height: auto;
   overflow: hidden;
   object-fit: contain;
   position: relative;
 }
+
+.feature-inner-wrapper {
+
+}
+
 
 /* child element */
 .feature-image {
