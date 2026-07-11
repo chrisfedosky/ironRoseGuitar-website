@@ -31,3 +31,13 @@
     if (window.innerWidth >= 768) closeNav();
   });
 })();
+
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { closeNav(); toggle.focus(); }
+  });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth >= 768) closeNav();
+  });
+})();
