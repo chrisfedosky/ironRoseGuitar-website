@@ -1045,3 +1045,47 @@ ul {
   font-size: 0.75rem;
   color: var(--text-muted);
 }
+/* ----Media Queries ----*/
+
+/* ---- hamburger related ----*/
+
+@media (min-width: 768px) {
+  .site-header    { flex-direction: row; align-items: center; padding: 0 var(--pad); height: 68px; gap: 0; }
+  .header-top     { flex: 1; border-bottom: none; padding: 0; }
+  .nav-toggle     { display: none; }
+  .site-nav       { max-height: none; opacity: 1; overflow: visible; display: flex; align-items: center; gap: 1.5rem; }
+  .nav-links      { flex-direction: row; gap: 0; padding: 0; border-top: none; }
+  .nav-links li a { padding: 0 0.75rem; border-bottom: none; font-size: 0.9rem; }
+  .nav-cta        { margin: 0; }
+}
+
+/* ---- feature image related ----*/
+
+/* Tablet media query */
+
+@media (min-width: 768px) {
+  .feature-image-container {
+    height: 350px; /* Adjusts fixed height for larger screens */
+  }
+} /* Desktop media query */
+
+@media (min-width: 1024px) {
+  .feature-image-container {
+    height: 450px; /* Adjusts fixed height for desktop views */
+  }
+}
+
+@media (min-width: 768px) {
+  .site-footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3rem var(--pad);
+  }
+  .footer-brand { max-width: 240px; }
+}
+
+/* ── 14. Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
