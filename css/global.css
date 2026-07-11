@@ -676,24 +676,30 @@ ul {
   background: var(--accent-light);
   color: var(--white);
   border-color: var(--accent);
-  margin-top: .5rem;
+  margin-top: .5rem;/*-- gives cta btn breathing room -- */
+}
+
+.btn-primary:hover {
+  opacity: 0.88;
+  text-decoration: none;
+  background: var(--primary-light);
+  color: var(--text);
+  border-color: var(--accent-secondary-light)
 }
 
 .btn-secondary {
   background: var(--primary-light);
   color: var(--white);
-  border-color: var(--primary);
+  border-color: var(--accent-secondary-light);
 }
 
 .btn-secondary:hover  {
   opacity: 0.88;
   text-decoration: none;
-  background: var(--tertiary-light);
+  background: var(--accent-light);
   color: var(--text);
-  border-color: var(--accent-secondary-light)
+  border-color: var(--primary)
 }
-
-
 
 .btn-outline {
   background: transparent;
