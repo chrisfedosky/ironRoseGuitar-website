@@ -530,6 +530,13 @@ main {
 
 /* ------  Reviews --  */
 
+.quote-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.75rem;
+}
+
 .fig-quote-block {
   display: flex;
   flex-direction: column;
@@ -569,23 +576,26 @@ blockquote {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+/* parent container */
 .feature-wrapper {
-  width: 60vw;
+  width: 100%;
   height: 375px;
   overflow: hidden;
-  object-fit: cover;
+  object-fit: contain;
   position: relative;
 }
 
+/* child element */
 .feature-image {
-  width: 60vw;
-  height: 375px;
+  width: 50%;
+  height: auto;
   object-fit: cover;
   object-position: center;
   display: block;
   border: 1px solid black;
 }
 
+/* 2nd child element */
 .feature-main {
   display: flex;
   flex-direction: column;
@@ -595,6 +605,7 @@ blockquote {
   margin-top: .65rem;
 }
 
+/* photo galleries */
 .student-pic-gallery {
   display: flex;
   justify-content: space-between;
@@ -603,6 +614,7 @@ blockquote {
   margin-top: 1rem;
 }
 
+/* icon element */
 .icon-wrapper {
   display: flex;
   justify-content: flex-start;
