@@ -9,8 +9,8 @@
   grid-template-areas:
     "hero"
     "story"
-    "values"
     "creds"
+    "values"
     "cta";
 }
 
@@ -21,8 +21,8 @@
     grid-template-areas:
       "hero   hero"
       "story   story"
-      "values  values"
       "creds creds"
+      "values  values"
       "cta     cta";
   }
 }
