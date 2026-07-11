@@ -545,7 +545,8 @@ main {
 }
 
 blockquote {
-  padding-inline: 2rem;
+  /* controls the quote indent */
+  padding-inline: 3rem;
 }
 
 .asterisk {
@@ -562,22 +563,24 @@ blockquote {
 /* __________________________________________________________________________*/
 
 /* ── 9.1 Images, Icons, bullet points── */
-.feature-image-wrapper picture {
+
+.feature-image-wrapper {
   width: 100%;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.feature-image-container{
-  width: 100%;
-  height: 475px;
+.feature-wrapper {
+  width: 60vw;
+  height: 375px;
   overflow: hidden;
+  object-fit: cover;
   position: relative;
 }
 
 .feature-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 60vw;
+  height: 375px;
+  object-fit: cover;
   object-position: center;
   display: block;
   border: 1px solid black;
@@ -600,6 +603,13 @@ blockquote {
   margin-top: 1rem;
 }
 
+.icon-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: .75rem;
+  align-items: center;
+}
+
 .my-icon {
   width: 24px;
   height: 24px;
@@ -614,15 +624,7 @@ blockquote {
   stroke: currentColor;
 }
 
-.icon-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  gap: .75rem;
-  align-items: center;
-}
-
-
-/* style bullets here ____________________-->*/
+/*-- style bullets here --*/
 ul {
   list-style-type: circle;
 }
