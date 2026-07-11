@@ -6,8 +6,8 @@
     "hero"
     "confidence"
     "format"
-    "logistics"
     "pricing"
+    "logistics"
     "cta";
 }
 
@@ -31,8 +31,8 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "hero hero hero"
-      "confidence confidence format"
-      "pricing pricing format"
+      "confidence confidence pricing"
+      "format format pricing"
       "logistics logistics cta";
   }
 }

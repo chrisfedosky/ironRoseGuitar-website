@@ -20,8 +20,9 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "hero   hero"
-      "photo   story"
-      "values  creds"
+      "story   story"
+      "values  values"
+      "creds creds"
       "cta     cta";
   }
 }
@@ -32,7 +33,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "hero   hero   hero"
-      "story   values  photo"
-      "story   creds   cta";
+      "story   story  creds"
+      "values   values   cta";
   }
 }
