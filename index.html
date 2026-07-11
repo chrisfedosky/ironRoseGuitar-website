@@ -46,10 +46,11 @@
       <div class="card card-feature" style="grid-area: review">
         <div class="eyebrow">Beginner Guitar Lessons for Adults and Teens!</div>
 
-        <div class="feature-image-wrapper">
+        <div class="feature-image-wrapper"><!-- grandparent container -->
 
-          <div class="feature-wrapper">
-            <picture class="feature-image">
+          <div class="feature-wrapper"><!-- parent container -->
+
+            <picture class="feature-image"><!-- child element -->
               <source srcset="assets/images/pics/enhanced2.0/New_Home_Page1_LE_upscale_prime.copy-crop.webp" type="image/webp">
               <img src="assets/images/pics/enhanced2.0/New_Home_Page1_LE_upscale_prime-fallback.jpg"
                    alt="Adult Beginner Student smiling, holding an acoustic guitar on a Zoom Online Session"
@@ -58,23 +59,26 @@
                    loading="lazy"
                    style="max-width: 100%; height: auto;">
             </picture>
+
+            <h2>Built for Momentum, Not Just Mechanics</h2>
+
           </div>
 
-          <!-- update content toward adult beginner -->
-          <div class="feature-main">
-            <h2>Built for Momentum, Not Just Mechanics</h2>
+          <div class="feature-main"><!-- 2nd parent container -->
+            <!-- update content toward adult beginner -->
+            <!-- children elements -->
             <p><strong>Never Too Late:</strong> We skip the stuffy academic hurdles to get you playing music you love immediately.</p>
             <p><strong>Success in Week 1:</strong> My goal is "Small Wins," getting that first recognizable song under your fingers fast to keep motivation high.</p>
             <p><strong>Your Schedule, Your Way:</strong> Choose between convenient Online sessions or local In-person lessons.</p>
+          </div>
 
-          <!-- update content toward adult beginner -->
-
-            <figure class="fig-quote-block">
-              <blockquote>
+          <div class="quote-wrapper"><!-- 3rd parent container -->
+            <figure class="fig-quote-block"><!-- child container -->
+              <blockquote><!-- grandchild element -->
                 <p>I’ve worked with Chris... His energy is laid back and approachable yet he's always very professional when it comes to getting back to me and scheduling, which is important to me and my busy schedule.</p>
               </blockquote>
 
-              <figcaption>
+              <figcaption><!-- 2nd grandchild element -->
                 <div class="review-quote">
                   <svg class="my-icon" viewBox="0 0 421.56 421.56">
                     <g>
@@ -91,9 +95,7 @@
               </figcaption>
             </figure>
           </div>
-
         </div>
-
       </div>
 
       <!-- TRUST BAR -->
