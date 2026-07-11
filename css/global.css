@@ -436,6 +436,13 @@ main {
 
 }
 
+.tier-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  gap: 0.5rem;
+}
 
 /* ── Card-Qn ── */
 .card-qn {
