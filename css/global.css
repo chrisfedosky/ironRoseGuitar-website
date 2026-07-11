@@ -636,7 +636,7 @@ blockquote {
 
 /* style bullets here ____________________-->*/
 ul {
-  /*list-style-type: circle;*/
+  list-style-type: circle;
 }
 
 /* ── 10. Buttons ── */
