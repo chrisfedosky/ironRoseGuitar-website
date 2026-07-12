@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Lesson — Iron Rose Guitar</title>
+    <meta name="description" content="Guitar lessons for busy teens & adults. Flexible scheduling, beginner-friendly, online and in-person lesson in Fitchburg, WI.">
+    <meta name="keywords" content="guitar lessons, busy people, online guitar lessons, in-person guitar lessons, Fitchburg, WI, Madison, WI, Verona, WI">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/pages/contact.css">
+    <!-- update and make sure it is consistent in the 4 areas -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MusicTeacher",
+            "name": "YOUR BUSINESS NAME",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Fitchburg",
+                "addressRegion": "WI"
+            },
+            "areaServed": ["Madison, WI", "Verona, WI", "Fitchburg, WI"],
+            "telephone": "YOUR PHONE WITH COUNTRY CODE e.g. +16085550123",
+            "url": "https://YOURDOMAIN.com",
+            "sameAs": "https://maps.google.com/?cid=YOUR_CID"
+        }
+    </script>
+</head>
+<body>
+
+<header id="site-header" class="site-header"></header>
+
+<main>
+    <div class="bento-grid">
+
+        <!-- HERO -->
+        <div class="card card-hero" style="grid-area: hero">
+            <div class="eyebrow">Let's get started</div>
+            <h1>Let’s turn that “Someday” into your first song.</h1>
+            <p>Tell me a little about what you’d like to play, and I’ll reach out within 24 hours to find a time that works for your schedule. No pressure! Just an easy first step to make a joyful noise!</p>
+        </div>
+
+        <!-- FORM -->
+        <!-- refactor form class name -->
+        <div class="card card-form" style="grid-area: form; justify-content: flex-start;">
+            <h2 style="margin-bottom: 1.5rem;">What’s your musical goal? (No wrong answers!)</h2>
+
+            <!--
+              NETLIFY FORM — three things Netlify requires:
+              1. data-netlify="true"
+              2. name="booking" on the form tag
+              3. <input type="hidden" name="form-name" value="booking">
+            -->
+            <!-- 1. Change the action to the Web3Forms API endpoint -->
+            <form id="guitarLeadForm" action="https://web3forms.com" method="POST">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE" />
+                <input type="hidden" name="subject" value="New Guitar Lesson Lead!" />
+
+                <!-- SPAM HONEYPOT: Hidden from real users using inline CSS styling -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <!-- Standard Visible Fields -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" />
+                </div>
+
+                <!-- New Custom Message Field -->
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your guitar goals, preferred style, or availability..."></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn">Get Free Intro Lesson</button>
+
+                <!-- Success / Error Status Message Container -->
+                <div id="formStatus" style="margin-top: 15px; font-weight: bold;"></div>
+            </form>
+
+
+        </div>
+
+        <!-- WHAT HAPPENS NEXT 3 STEPS -->
+        <div class="card card-contact-steps" style="grid-area: expect;">
+            <div class="eyebrow">What happens next</div>
+
+            <h3>Three easy steps!</h3>
+            <div class="expect-steps">
+                <div class="expect-step">
+                    <div class="step-number">1</div>
+                    <div>
+                        <strong>A quick hello.</strong>
+                        <p>I'll get back to you within 24 hours (usually much sooner) to say hi and answer any questions.</p>
+                    </div>
+                </div>
+                <div class="expect-step">
+                    <div class="step-number">2</div>
+                    <div>
+                        <strong>Finding your flow.</strong>
+                        <p>We’ll pick a time that fits into your busy life, whether it’s an after-school slot for your teenager or a weekend session for yourself.</p>
+                    </div>
+                </div>
+                <div class="expect-step">
+                    <div class="step-number">3</div>
+                    <div>
+                        <strong>Your first song.</strong>
+                        <p>Your first lesson is free! This is just about seeing if we click and getting those fingers moving. No commitment required until you're ready to keep going.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOT SURE YET -->
+        <div class="card card-trust-mini" style="grid-area: trust;">
+            <div class="eyebrow">Take your time</div>
+            <h3>Still mulling it over?</h3>
+            <p><strong>I Totally understand.</strong> Starting something new takes a moment to process! Feel free to <a href="/faq.html">browse the FAQ</a> or <a href="/about.html">read my story on the About page</a> first. I’m here whenever you feel ready to take that next step.</p>
+
+            <div class="trust-mini">
+
+                <div>
+                    <svg class="my-icon-mini" viewBox="0 -960 960 960"><path d="M200-160v-80h560v80H200Zm0-140-51-321q-2 0-4.5.5t-4.5.5q-25 0-42.5-17.5T80-680q0-25 17.5-42.5T140-740q25 0 42.5 17.5T200-680q0 7-1.5 13t-3.5 11l125 56 125-171q-11-8-18-21t-7-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820q0 15-7 28t-18 21l125 171 125-56q-2-5-3.5-11t-1.5-13q0-25 17.5-42.5T820-740q25 0 42.5 17.5T880-680q0 25-17.5 42.5T820-620q-2 0-4.5-.5t-4.5-.5l-51 321H200Zm68-80h424l26-167-105 46-133-183-133 183-105-46 26 167Zm212 0Z"/></svg>
+                    <strong>25+ yrs </strong><span>teaching & playing experience</span>
+                </div>
+
+                <div>
+                    <svg class="my-icon-mini" viewBox="0 -960 960 960"><path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z"/></svg>
+                    <strong>★ 5.0</strong><span>average rating</span>
+                </div>
+
+                <div>
+                    <svg class="my-icon-mini" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M160-80v-440H80v-240h208q-5-9-6.5-19t-1.5-21q0-50 35-85t85-35q23 0 43 8.5t37 23.5q17-16 37-24t43-8q50 0 85 35t35 85q0 11-2 20.5t-6 19.5h208v240h-80v440H160Zm371.5-748.5Q520-817 520-800t11.5 28.5Q543-760 560-760t28.5-11.5Q600-783 600-800t-11.5-28.5Q577-840 560-840t-28.5 11.5ZM360-800q0 17 11.5 28.5T400-760q17 0 28.5-11.5T440-800q0-17-11.5-28.5T400-840q-17 0-28.5 11.5T360-800ZM160-680v80h280v-80H160Zm280 520v-360H240v360h200Zm80 0h200v-360H520v360Zm280-440v-80H520v80h280Z"/></svg>
+                    <div><strong>Free first lesson</strong><span>Zero pressure</span></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="/js/includes.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/form.js"></script>
+</body>
+</html>
