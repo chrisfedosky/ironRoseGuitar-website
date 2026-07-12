@@ -1,45 +1,36 @@
-/* ============================================================
-   form.js — contact form validation
-   Validates before Netlify receives the POST.
-   Only used on contact.html — loaded after nav.js.
-   ============================================================ */
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('bookingForm');
+const form = document.getElementById('form');
+const submitBtn = form.querySelector('button[type="submit"]');
 
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
-    // Append the 'form-name' value manually
     const formData = new FormData(form);
-    formData.append('form-name', 'booking');
+    formData.append("access_key", "73851e33-fb44-47a8-9bd2-2d33b63f19b9");
 
-    // Encode the payload
-    const payload = new URLSearchParams(formData).toString();
+    const originalText = submitBtn.textContent;
 
-    // Send the data via fetch
-    fetch('/', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: payload
-    })
-        .then(response => response.json())
-        .then(data => {
-          if (data.success) {
-            // Clear form inputs
-            form.reset();
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
 
-            // Show success message
-            alert('Thank you for your submission! We will get back to you soon.');
-          } else {
-            // Handle error
-            alert('There was an error submitting your form. Please try again later.');
-          }
-        })
-        .catch(error => {
-          console.error('Error:', error);
-          alert('There was an error submitting your form. Please try again later.');
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
         });
-  });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert("Success! Your message has been sent.");
+            form.reset();
+        } else {
+            alert("Error: " + data.message);
+        }
+
+    } catch (error) {
+        alert("Something went wrong. Please try again.");
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
 });
