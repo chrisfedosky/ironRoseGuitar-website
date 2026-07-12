@@ -45,10 +45,22 @@
             <h2>What’s your musical goal? (No wrong answers!)</h2>
 
             <form action="https://api.web3forms.com/submit" method="POST">
+
                 <input type="hidden" name="access_key" value="73851e33-fb44-47a8-9bd2-2d33b63f19b9"><!-- TODO professionally mask -->
+
+                <!-- Honeypot spam trap — hidden from humans, bots fill it in -->
+                <div class="form-honeypot" aria-hidden="true">
+                    <label>Leave blank: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+                </div>
+
+                <!-- Name -->
+
                 <input type="text" name="name" required>
+
                 <input type="email" name="email" required>
+
                 <textarea name="message" required></textarea>
+
                 <button type="submit">Submit Form</button>
             </form>
 

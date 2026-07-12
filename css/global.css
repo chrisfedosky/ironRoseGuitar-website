@@ -186,17 +186,6 @@ main {
 .nav-open .nav-toggle span:nth-child(2) { opacity: 0; width: 0; }
 .nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Tablet+: nav becomes a row */
-@media (min-width: 768px) {
-  .site-header    { flex-direction: row; align-items: center; padding: 0 var(--pad); height: 68px; gap: 0; }
-  .header-top     { flex: 1; border-bottom: none; padding: 0; }
-  .nav-toggle     { display: none; }
-  .site-nav       { max-height: none; opacity: 1; overflow: visible; display: flex; align-items: center; gap: 1.5rem; }
-  .nav-links      { flex-direction: row; gap: 0; padding: 0; border-top: none; }
-  .nav-links li a { padding: 0 0.75rem; border-bottom: none; font-size: 0.9rem; }
-  .nav-cta        { margin: 0; }
-}
-
 /* ── 8. Bento grid container ── */
 .bento-grid {
   display: grid;
@@ -289,12 +278,13 @@ main {
 .card-feature2 h2 {
   text-align: center;
   margin-top: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .card-feature2 h3 {
   text-align: center;
   margin-top: 1rem;
+  font-size: 1.15rem;
   margin-bottom: .5rem;
 }
 
@@ -314,7 +304,7 @@ main {
 .card-form h2 {
   text-align: center;
   margin-top: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 /* ── Card-Bullet ── */
@@ -334,7 +324,7 @@ main {
 .card-bullet h2 {
   text-align: center;
   margin-top: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .list-benefit {
@@ -402,7 +392,7 @@ main {
 .card-info h2 {
   text-align: center;
   margin-top: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .card-info strong {
@@ -425,7 +415,7 @@ main {
 .card-pricing-packaging h2 {
   text-align: center;
   margin-top: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .card-pricing-packaging h3 {
@@ -459,7 +449,7 @@ main {
 
 .card-qn h2 {
   margin-top: .5rem;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
 }
 
 /* ── Card Contact Steps ── */
@@ -479,7 +469,7 @@ main {
 .card-contact-steps h3 {
   text-align: center;
   margin-top: .25rem;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 
 /* ── Card-CTA ── */
@@ -511,7 +501,6 @@ main {
 
 .card-format {}
 
-/* mov to images? -- */
 .card-profile-pic {
   background: var(--bg-light);
   padding: 2px 6px;
@@ -519,7 +508,6 @@ main {
   font-size: 0.8rem;
 }
 
-/* mov to images? -- */
 .card-multi-instrument-strip {
   display: flex;
   justify-content: space-between;
@@ -528,7 +516,7 @@ main {
   margin-top: 1rem;
 }
 
-/* ------  Reviews --  */
+/* ------  Reviews ---------------  */
 
 .quote-wrapper {
   display: flex;
@@ -567,15 +555,6 @@ blockquote {
 /*  align-items: center;*/
 /*  gap: .25rem;*/
 /*}*/
-/* __________________________________________________________________________*/
-/* __________________________________________________________________________*/
-
-/* ___________________Finish Feature img columns inner-wrapper??_______________________________*/
-
-/* __________________________________________________________________________*/
-
-/* __________________________________________________________________________*/
-
 
 /* ── 9.1 Images, Icons, bullet points── */
 
@@ -584,7 +563,6 @@ blockquote {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* parent container */
 .feature-wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -604,7 +582,6 @@ blockquote {
   gap: 0.25rem;
 }
 
-/* child element */
 .feature-image {
   width: 50%;
   height: auto;
@@ -614,7 +591,6 @@ blockquote {
   border: 1px solid black;
 }
 
-/* 2nd child element */
 .feature-main {
   display: flex;
   flex-direction: column;
@@ -792,7 +768,10 @@ ul {
   margin-bottom: 0.4rem;
 
 }
-.footer-name span { color: var(--primary-light); }
+
+.footer-name span {
+  color: var(--primary-light);
+}
 
 .footer-logo {
   width: 38px;
@@ -808,6 +787,7 @@ ul {
   align-items: center;
   gap: .25rem;/* adjusts Biz name spacing */
 }
+
 .footer-tagline {
   font-size: 0.85rem;
   color:rgba(255,255,255,0.5);
@@ -853,40 +833,21 @@ ul {
   color: rgba(255,255,255,0.3);
 }
 
-/*------------------questionable queries related to feature image --------------------------*/
-/* Tablet media query */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------associated form styling-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media (min-width: 768px) {
-  .feature-image-container {
-    height: 350px; /* Adjusts fixed height for larger screens */
-  }
-} /* Desktop media query */
 
-@media (min-width: 1024px) {
-  .feature-image-container {
-    height: 450px; /* Adjusts fixed height for desktop views */
-  }
+/* ── Form/Input styles (contact.html) ── */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 
-
-@media (min-width: 768px) {
-  .site-footer {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 3rem var(--pad);
-  }
-  .footer-brand { max-width: 240px; }
-}
-
-/* ── 14. Reduced motion ── */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-}
-
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------accociated form styling-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* ── 15. Form styles (contact.html) ── */
+/* ── Form styles (contact.html) ── */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -1020,8 +981,17 @@ ul {
   margin-top: 2px;
 }
 
-.expect-step strong { font-size: 0.95rem; color: var(--text); display: block; margin-bottom: 0.2rem; }
-.expect-step p      { font-size: 0.875rem; margin: 0; }
+.expect-step strong {
+  font-size: 0.95rem;
+  color: var(--text);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.expect-step p {
+  font-size: 0.875rem;
+  margin: 0;
+}
 
 /* ── 17. Trust mini stats (contact.html) ── */
 
@@ -1072,7 +1042,7 @@ ul {
   font-size: 0.75rem;
   color: var(--text-muted);
 }
-/* ----Media Queries ----*/
+/* ----Media Queries ------------------------------------*/
 
 /* ---- hamburger related ----*/
 
@@ -1085,8 +1055,7 @@ ul {
   .nav-links li a { padding: 0 0.75rem; border-bottom: none; font-size: 0.9rem; }
   .nav-cta        { margin: 0; }
 }
-
-/* ---- feature image related ----*/
+/*--------questionable queries related to feature image ---------*/
 
 /* Tablet media query */
 
@@ -1114,5 +1083,43 @@ ul {
 
 /* ── 14. Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+
+  /* ---- feature image related ??  ----------------------------------------*/
+  /* Tablet media query */
+  @media (min-width: 768px) {
+    .feature-image-container {
+      height: 350px; /* Adjusts fixed height for larger screens */
+    }
+  } /* Desktop media query */
+  @media (min-width: 1024px) {
+    .feature-image-container {
+      height: 450px; /* Adjusts fixed height for desktop views */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .site-footer {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 3rem var(--pad);
+    }
+
+    .footer-brand {
+      max-width: 240px;
+    }
+  }
+
+  /* ── 14. Reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
