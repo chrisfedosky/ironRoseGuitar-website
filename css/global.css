@@ -269,7 +269,7 @@ main {
 .card-feature h2 {
   text-align: center;
   margin-top: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;/*-- set 1.25rem for each feature ----------------------*/
 }
 
 
@@ -597,7 +597,11 @@ blockquote {
 }
 
 .feature-inner-wrapper {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 /* child element */
@@ -866,6 +870,7 @@ ul {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
 
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------accociated form styling-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* ── 15. Form styles (contact.html) ── */
 .form-group {
   display: flex;
