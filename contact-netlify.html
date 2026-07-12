@@ -45,21 +45,14 @@
       <div class="card card-form" style="grid-area: form; justify-content: flex-start;">
         <h2 style="margin-bottom: 1.5rem;">What’s your musical goal? (No wrong answers!)</h2>
 
-        <!--
-          NETLIFY FORM — three things Netlify requires:
-          1. data-netlify="true"
-          2. name="booking" on the form tag
-          3. <input type="hidden" name="form-name" value="booking">
-        -->
-        <form
-          name="booking"
+        <form name="booking"
           method="POST"
           action="/thanks.html"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           novalidate
-          id="bookingForm"
-        ><!-- thank you success response, maybe popup? -->
+          id="bookingForm"><!-- thank you success response, maybe popup? -->
+
           <!-- Required hidden input — do not remove -->
           <input type="hidden" name="form-name" value="booking">
 
