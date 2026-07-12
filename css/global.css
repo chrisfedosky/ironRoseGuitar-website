@@ -716,6 +716,21 @@ ul {
   border-color: var(--primary)
 }
 
+.btn-tertiary {
+  background: var(--tertiary-light);
+  color: var(--text);
+  border-color: var(--accent-secondary-light);
+}
+
+.btn-tertiary:hover {
+  opacity: 0.88;
+  text-decoration: none;
+  background: var(--primary-light);
+  color: var(--white);
+  border-color: var(--accent-light)
+}
+
+
 .btn-outline {
   background: transparent;
   border-color: rgba(255,255,255,0.5);
