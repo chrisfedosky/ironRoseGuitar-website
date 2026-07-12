@@ -1019,7 +1019,7 @@ input[type="password"] {
   justify-content: space-around;
   align-items: center;
   gap: .15rem;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: .5rem;
 }
 
