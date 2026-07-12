@@ -41,54 +41,16 @@
         </div>
 
         <!-- FORM -->
-        <!-- refactor form class name -->
-        <div class="card card-form" style="grid-area: form; justify-content: flex-start;">
-            <h2 style="margin-bottom: 1.5rem;">What’s your musical goal? (No wrong answers!)</h2>
+        <div class="card card-form" style="grid-area: form">
+            <h2>What’s your musical goal? (No wrong answers!)</h2>
 
-            <!--
-              NETLIFY FORM — three things Netlify requires:
-              1. data-netlify="true"
-              2. name="booking" on the form tag
-              3. <input type="hidden" name="form-name" value="booking">
-            -->
-            <!-- 1. Change the action to the Web3Forms API endpoint -->
-            <form id="guitarLeadForm" action="https://web3forms.com" method="POST">
-                <!-- Web3Forms Access Key -->
-
-                <input type="hidden" name="access_key" value="73851e33-fb44-47a8-9bd2-2d33b63f19b9" />
-                <input type="hidden" name="subject" value="New Guitar Lesson Lead!" />
-
-                <!-- SPAM HONEYPOT: Hidden from real users using inline CSS styling -->
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-                <!-- Standard Visible Fields -->
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required />
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" />
-                </div>
-
-                <!-- New Custom Message Field -->
-                <div class="form-group">
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your guitar goals, preferred style, or availability..."></textarea>
-                </div>
-
-                <button type="submit" id="submitBtn">Get Free Intro Lesson</button>
-
-                <!-- Success / Error Status Message Container -->
-                <div id="formStatus" style="margin-top: 15px; font-weight: bold;"></div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="73851e33-fb44-47a8-9bd2-2d33b63f19b9">
+                <input type="text" name="name" required>
+                <input type="email" name="email" required>
+                <textarea name="message" required></textarea>
+                <button type="submit">Submit Form</button>
             </form>
-
 
         </div>
 
