@@ -412,13 +412,13 @@ main {
 
 .trust-stat strong {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 800;
   color: var(--primary-dark);
   font-family: 'Lora', serif;
 }
 .trust-stat span {
-  font-size: 1rem;
+  font-size: 0.80rem;
   color: var(--text-muted);
 }
 
@@ -436,6 +436,7 @@ main {
   gap: .75rem;
   position: relative;
   overflow: hidden;
+  padding-bottom: 1.5rem;
 }
 
 .card-info h2 {
@@ -444,9 +445,9 @@ main {
   font-size: 1.25rem;
 }
 
-.card-info strong {
+/*.card-info strong {*/
 
-}
+/*}*/
 
 /* ── Card Pricing & Packaging ── */
 .card-pricing-packaging {
@@ -465,6 +466,10 @@ main {
   text-align: center;
   margin-top: .5rem;
   font-size: 1.25rem;
+}
+
+.card-pricing-packaging-p {
+  text-align: center;
 }
 
 .card-pricing-packaging h3 {
