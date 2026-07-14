@@ -318,7 +318,7 @@ main {
   min-height: 260px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: .35rem;
   position: relative;
   overflow: hidden;
@@ -331,7 +331,7 @@ main {
 }
 
 .card-feature2 h3 {
-  text-align: center;
+  text-align: left;
   margin-top: 1rem;
   font-size: 1.15rem;
   margin-bottom: .5rem;
@@ -687,7 +687,7 @@ ul {
 
 /* ── 10. Buttons ── */
 .btn {
-  display: inline-flex;
+  display: flex;/* or inline-flex? */
   align-items: center;
   gap: 0.4rem;
   padding: 0.7rem 1.5rem;
