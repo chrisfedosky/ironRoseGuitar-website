@@ -590,64 +590,20 @@ main {
 
 blockquote {
   /* controls the quote indent */
-  padding-inline: 3rem;
+  padding-inline: 1rem;
+}
+
+.cite-stars-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .asterisk {
   padding-inline: 2rem;
   margin-bottom: .85rem;
 }
-/* might be unnecessary and unused ---------------- */
-/*.review-stars {*/
-/*  display: flex;*/
-/*  justify-content: flex-start;*/
-/*  align-items: center;*/
-/*  gap: .25rem;*/
-/*}*/
-
-/* ── 9.1 Images, Icons, bullet points── */
-
-/*.feature-image-wrapper {*/
-/*  width: 100%;*/
-/*  transition: transform 0.3s ease, filter 0.3s ease;*/
-/*}*/
-
-/*.feature-wrapper {*/
-/*  display: flex;*/
-/*  justify-content: space-evenly;*/
-
-/*  width: 100%;*/
-/*  height: auto;*/
-/*  overflow: hidden;*/
-/*  object-fit: contain;*/
-/*  position: relative;*/
-/*}*/
-
-/*.feature-inner-wrapper {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  justify-content: space-evenly;*/
-/*  align-items: center;*/
-/*  gap: 0.25rem;*/
-/*}*/
-
-/*.feature-image {*/
-/*  width: 50%;*/
-/*  height: auto;*/
-/*  object-fit: cover;*/
-/*  object-position: center;*/
-/*  display: block;*/
-/*  border: 1px solid black;*/
-/*}*/
-
-/*.feature-main {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  justify-content: space-around;*/
-/*  align-items: center;*/
-/*  gap: .8rem;*/
-/*  margin-top: .65rem;*/
-/*}*/
 
 /* photo galleries */
 .student-pic-gallery {
@@ -673,9 +629,23 @@ blockquote {
   stroke: currentColor;
 }
 
+.my-icon-review {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.my-icon-trust {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
 .my-icon-mini {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   fill: currentColor;
   stroke: currentColor;
 }
@@ -807,6 +777,7 @@ ul {
   background: var(--primary-dark);
   color: rgba(255,255,255,0.6);
 }
+
 .footer-brand {
   display: flex;
   flex-direction: column;
