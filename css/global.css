@@ -267,30 +267,6 @@ main {
   font-size: 1.25rem;/*-- set 1.25rem for each feature ----------------------*/
 }
 
-/*.feature-image-wrapper {*/
-/*  width: 100%;*/
-/*  transition: transform 0.3s ease, filter 0.3s ease;*/
-/*}*/
-
-/*.feature-wrapper {*/
-/*  display: flex;*/
-/*  justify-content: space-evenly;*/
-
-/*  width: 100%;*/
-/*  height: auto;*/
-/*  overflow: hidden;*/
-/*  object-fit: contain;*/
-/*  position: relative;*/
-/*}*/
-
-/*.feature-inner-wrapper {*/
-/*  display: flex;*/
-
-/*  justify-content: space-evenly;*/
-/*  align-items: center;*/
-/*  gap: 0.25rem;*/
-/*}*/
-
 .feature-image {
   width: 100%;
   height: 100%;
@@ -449,10 +425,6 @@ main {
   margin-top: .5rem;
   font-size: 1.25rem;
 }
-
-/*.card-info strong {*/
-
-/*}*/
 
 /* ── Card Pricing & Packaging ── */
 .card-pricing-packaging {
@@ -908,9 +880,6 @@ address {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.3);
 }
-
-/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------associated form styling-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 
 /* ── Form/Input styles (contact.html) ── */
 input[type="text"],
