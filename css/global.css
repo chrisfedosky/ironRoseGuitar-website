@@ -241,6 +241,11 @@ main {
   color: rgba(255,255,255,0.75);
 }
 
+.card-hero h2 {
+  font-size: 1.15rem;
+  text-align: center;
+}
+
 /* ── Card-Feature ── */
 
 .card-feature {
@@ -945,7 +950,7 @@ input[type="password"] {
   color: var(--text);
   background: var(--bg);
   text-decoration: none;
-  border: 1px solid var(--text-muted);
+  border: 1px solid var(--text-muted) !Important;
   border-radius: 8px;
   transition: border-color 0.15s, box-shadow 0.15s;
   appearance: none;
