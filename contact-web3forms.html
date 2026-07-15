@@ -54,14 +54,56 @@
                 </div>
 
                 <!-- Name -->
+                <!-- Netlify-Name div clone-->
+                <div class="form-group">
+                    <label class="form-label" for="name">
+                        Your name <span class="form-required" aria-hidden="true">*</span>
+                    </label>
 
-                <input type="text" name="name" required>
+                    <input id="name" type="text" name="name" class="form-input" placeholder="What should I call you?" autocomplete="name" required>
+                    <span class="form-error" id="name-error" role="alert"></span>
+                </div>
 
-                <input type="email" name="email" required>
+                <!-- Email -->
+                <div class="form-group">
+                    <label class="form-label" for="email">
+                        Email address <span class="form-required" aria-hidden="true">*</span>
+                    </label>
+                    <input class="form-input" id="email" type="email" name="email" placeholder="you@example.com" autocomplete="name" required>
 
-                <textarea name="message" required></textarea>
+                    <span class="form-error" id="email-error" role="alert"></span>
+                </div>
 
-                <button type="submit">Submit Form</button>
+                <!-- should we have a phone number field? Here is the Netlify div: -->
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label class="form-label" for="phone">
+                        Phone number <span class="form-optional">(optional. for those who prefer to call or text!)</span>
+                    </label>
+                    <input
+                            class="form-input"
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="(608) 555-0123"
+                            autocomplete="tel"
+                    >
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <label class="form-label" for="message">
+                        Message me! <span class="form-optional">(optional. What's on your mind?)</span>
+                    </label>
+                    <textarea class="form-textarea" id="message" name="message" rows="4" placeholder="Tell me what moves you—the songs, the genres, or any questions about getting started..." required></textarea>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
+                    Send your information!
+                </button>
+
             </form>
 
         </div>
