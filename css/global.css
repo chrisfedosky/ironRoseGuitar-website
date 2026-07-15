@@ -662,7 +662,7 @@ ul {
 
 /* ── 10. Buttons ── */
 .btn {
-  display: flex;/* or inline-flex? */
+  display: inline-flex;/* or flex? */
   align-items: center;
   gap: 0.4rem;
   padding: 0.7rem 1.5rem;
@@ -674,7 +674,7 @@ ul {
   text-decoration: none;
   border: 2px solid transparent;
   /*how smooth the buttons?*/
-  transition: background-color 0.85ms ease-in-out;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-out;
   width: fit-content;
 }
 
@@ -684,6 +684,8 @@ ul {
 }
 
 .btn:active {
+  /* Darker shade for instant feedback???? */
+  background-color: hsl(211 100% 35%);
   transform: scale(0.97);
 }
 
@@ -942,6 +944,7 @@ input[type="password"] {
   font-size: 1rem;
   color: var(--text);
   background: var(--bg);
+  text-decoration: none;
   border: 1px solid var(--text-muted);
   border-radius: 8px;
   transition: border-color 0.15s, box-shadow 0.15s;
@@ -952,7 +955,7 @@ input[type="password"] {
 .form-input:focus,
 .form-select:focus,
 .form-textarea:focus {
-  outline: none;
+  /*outline: none;*/
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(212, 98, 26, 0.15);
 }
@@ -1189,6 +1192,20 @@ input[type="password"] {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
       transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* 3. Desktop/Pointer Enhancements (Hover Strategy) */
+  @media (hover: hover) and (pointer: fine) {
+    /* This block only fires on devices with mice, trackpads, or digital pens */
+
+    .cta-button:hover {
+      background-color: #1a85ff; /* Lighter/brighter shade on desktop hover */
+    }
+
+    .cta-button:active {
+      background-color: #0056b3; /* Retain dark press for desktop click */
+      transform: scale(0.97);
     }
   }
 }
