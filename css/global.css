@@ -286,6 +286,7 @@ main {
 
 .figure-image-caption1 {
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .feature-main {
@@ -326,6 +327,11 @@ main {
   font-size: 1.15rem;
   margin-bottom: .5rem;
 }
+
+.card-feature2 p {
+  color: var(--text);
+}
+
 
 /* ── Card Form ── */
 .card-form {
@@ -462,12 +468,16 @@ main {
   text-align: center;
 }
 
+.card-pricing-packaging-p p{
+  color: var(--text);
+}
+
 .card-pricing-packaging h3 {
   margin-bottom: .5rem;
 }
 
-.tier1, .tier2, .tier3 {
-
+.tier1 p, .tier2 p, .tier3 p, .asterisk p {
+  color: var(--text);
 }
 
 .tier-title {
