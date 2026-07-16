@@ -574,6 +574,14 @@ picture {
   margin-top: 1rem;
 }
 
+.card-multi-instrument-strip-wrapper {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 /* ------  Reviews ---------------  */
 
 .quote-wrapper {
