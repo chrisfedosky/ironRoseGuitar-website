@@ -259,7 +259,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
   gap: .35rem;
   position: relative; /*what does this do?*/
   overflow: hidden;
@@ -279,7 +278,7 @@ main {
   display: block;
   border: 1px solid black;
 }
-
+/*-- will potentially be used to finalize image layouts --*/
 .figure-feature-image-caption-wrapper1 {
 
 }
@@ -289,6 +288,10 @@ main {
   text-align: center;
 }
 
+picture {
+  margin-bottom: 0.5rem;
+}
+
 .feature-main {
   display: flex;
   flex-direction: column;
@@ -296,6 +299,7 @@ main {
   align-items: center;
   gap: .8rem;
   margin-top: .65rem;
+  margin-bottom: .55rem;
 }
 
 .feature-main p {
@@ -884,8 +888,9 @@ address {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(255,255,255,0.3);
+  color: var(--white);
   margin-bottom: 0.25rem;
+
 }
 
 .footer-col a {
