@@ -64,13 +64,35 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  font-size: clamp(1rem, 4vw, 1.23rem);
 }
+
 /* ¡Lora is not in the assets folder! */
-h1, h2, h3 { font-family: 'Lora', serif; line-height: 1.2; }
-h1 { font-size: clamp(1.8rem, 5vw, 3rem);   font-weight: 700; }
-h2 { font-size: clamp(1.3rem, 3vw, 1.9rem); font-weight: 600; }
-h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 600; }
-p  { font-size: clamp(0.95rem, 1.5vw, 1.05rem); color: var(--text-muted); line-height: 1.75; }
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 600;
+}
+
+p  {
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  color: var(--text);
+  line-height: 1.75;
+}
 
 a { color: var(--primary); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -276,11 +298,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.figure-image-container {
-  max-width: 100%;
-  height: auto;
 }
 
 .feature-image {
