@@ -34,6 +34,17 @@
   inject('site-header', '/partials/header.html', setActiveLink);
   inject('site-footer', '/partials/footer.html');
 
+  // Ensure scripts within the injected partials are executed
+  document.addEventListener('DOMContentLoaded', function () {
+    const header = document.getElementById('site-header');
+    if (header) {
+      const script = document.createElement('script');
+      script.src = '/js/nav.js';
+      header.appendChild(script);
+    }
+  });
+
 })();
+
 
 

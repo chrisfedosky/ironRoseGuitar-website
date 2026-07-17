@@ -11,7 +11,7 @@
 
   toggle.addEventListener('click', function () {
     const isOpen = body.classList.toggle('nav-open');
-    toggle.setAttribute('aria-expanded', isOpen);
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     toggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
   });
 
@@ -29,5 +29,14 @@
 
   window.addEventListener('resize', function () {
     if (window.innerWidth >= 768) closeNav();
+  });
+
+  // Event delegation for hamburger menu
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('.nav-toggle')) {
+      const isOpen = body.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      toggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+    }
   });
 })();
