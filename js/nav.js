@@ -1,6 +1,6 @@
 (function () {
   const toggle = document.querySelector('.nav-toggle');
-  const body   = document.body;
+  const body = document.body;
   if (!toggle) return;
 
   function closeNav() {
@@ -30,13 +30,5 @@
   window.addEventListener('resize', function () {
     if (window.innerWidth >= 768) closeNav();
   });
-
-  // Event delegation for hamburger menu
-  document.addEventListener('click', function (e) {
-    if (e.target.closest('.nav-toggle')) {
-      const isOpen = body.classList.toggle('nav-open');
-      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      toggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
-    }
-  });
 })();
+

@@ -16,7 +16,7 @@
   }
 
   function setActiveLink() {
-    let raw     = window.location.pathname.replace(/\/$/, '');
+    let raw = window.location.pathname.replace(/\/$/, '');
     let current = (raw === '' || raw === '/') ? '/index.html' : raw;
 
     document.querySelectorAll('.nav-links a').forEach(function (link) {
@@ -42,9 +42,13 @@
       script.src = '/js/nav.js';
       header.appendChild(script);
     }
+
+    const footer = document.getElementById('site-footer');
+    if (footer) {
+      const script = document.createElement('script');
+      script.src = '/js/nav.js';
+      footer.appendChild(script);
+    }
   });
 
 })();
-
-
-
