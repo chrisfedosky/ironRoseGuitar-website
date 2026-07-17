@@ -42,6 +42,10 @@ img, video { max-width: 100%; display: block; }
   --gap:       clamp(10px, 1.5vw, 16px);
   --pad:       clamp(1rem, 4vw, 2.5rem);
   --max-width: 1100px;
+
+  --feature-image-height-mobile: 200px;
+  --feature-image-height-tablet: 300px;
+  --feature-image-height-desktop: 400px;
 }
 
 /* ── 4. Base ── */
@@ -272,18 +276,19 @@ main {
 
 .feature-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: center;
   display: block;
   border: 1px solid black;
 }
 /*-- will potentially be used to finalize image layouts --*/
-.figure-feature-image-caption-wrapper1 {
-
+.feature-image-container {
+  max-width: 100%;
+  height: auto;
 }
 
-.figure-image-caption1 {
+.figure-image-caption {
   font-size: 0.9rem;
   text-align: center;
 }
@@ -1133,6 +1138,7 @@ input[type="password"] {
   font-size: 0.75rem;
   color: var(--text-muted);
 }
+
 /* ----Media Queries ------------------------------------*/
 
 /* ---- hamburger related ----*/
@@ -1146,31 +1152,6 @@ input[type="password"] {
   .nav-links li a { padding: 0 0.75rem; border-bottom: none; font-size: 0.9rem; }
   .nav-cta        { margin: 0; }
 }
-/*--------questionable queries related to feature image ---------*/
-
-/* Tablet media query */
-
-@media (min-width: 768px) {
-  .feature-image-container {
-    height: 350px; /* Adjusts fixed height for larger screens */
-  }
-} /* Desktop media query */
-
-@media (min-width: 1024px) {
-  .feature-image-container {
-    height: 450px; /* Adjusts fixed height for desktop views */
-  }
-}
-
-@media (min-width: 768px) {
-  .site-footer {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 3rem var(--pad);
-  }
-  .footer-brand { max-width: 240px; }
-}
 
 /* ── 14. Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
@@ -1179,17 +1160,16 @@ input[type="password"] {
     transition-duration: 0.01ms !important;
   }
 
-
-  /* ---- feature image related ??  ----------------------------------------*/
   /* Tablet media query */
   @media (min-width: 768px) {
     .feature-image-container {
-      height: 350px; /* Adjusts fixed height for larger screens */
+      height: var(--feature-image-height-tablet); /* Adjusts fixed height for larger screens */
     }
+
   } /* Desktop media query */
   @media (min-width: 1024px) {
     .feature-image-container {
-      height: 450px; /* Adjusts fixed height for desktop views */
+      height: var(--feature-image-height-desktop); /* Adjusts fixed height for desktop views */
     }
   }
 
