@@ -43,9 +43,9 @@ img, video { max-width: 100%; display: block; }
   --pad:       clamp(1rem, 4vw, 2.5rem);
   --max-width: 1100px;
 
-  --feature-image-height-mobile: 200px;
-  --feature-image-height-tablet: 300px;
-  --feature-image-height-desktop: 400px;
+  --feature-image-height-mobile: 150px;
+  --feature-image-height-tablet: 250px;
+  --feature-image-height-desktop: 350px;
 }
 
 /* ── 4. Base ── */
@@ -64,7 +64,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  font-size: clamp(1rem, 4vw, 1.23rem);
+  /*font-size: clamp(1rem, 4vw, 1.23rem);*//* what does this do? --*/
 }
 
 /* ¡Lora is not in the assets folder! */
@@ -271,14 +271,16 @@ main {
   color: rgba(255,255,255,0.75);
 }
 
+.card-hero h1 {
+  text-align: center;
+}
+
 .card-hero h2 {
-  font-size: 1.15rem;
+  /*font-size: 1.15rem;*/
   text-align: center;
 }
 
 /* ── Card-Feature ── */
-
-
 
 .card-feature {
   background: var(--bg-light);
@@ -295,6 +297,7 @@ main {
 .feature-image-container {
   max-width: 100%;
   height: auto;
+  margin-bottom: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -345,20 +348,20 @@ picture {
 
 .card-feature2 h2 {
   text-align: center;
-  margin-top: .5rem;
-  font-size: 1.25rem;
+  margin-bottom: .5rem;
+  /*font-size: 1.25rem;*/
 }
 
 .card-feature2 h3 {
   text-align: left;
-  margin-top: 1rem;
-  font-size: 1.15rem;
+  margin-top: .5rem;
+  /*font-size: 1.15rem;*/
   margin-bottom: .5rem;
 }
 
-.card-feature2 p {
-  color: var(--text);
-}
+/*.card-feature2 p {*/
+/*  color: var(--text);*/
+/*}*/
 
 
 /* ── Card Form ── */
@@ -376,8 +379,8 @@ picture {
 
 .card-form h2 {
   text-align: center;
-  margin-top: .5rem;
-  font-size: 1.25rem;
+  /*margin-top: .5rem;*/
+  /*font-size: 1.25rem;*/
 }
 
 /* ── Card-Bullet ── */
@@ -396,8 +399,8 @@ picture {
 
 .card-bullet h2 {
   text-align: center;
-  margin-top: .5rem;
-  font-size: 1.25rem;
+  /*margin-top: .5rem;*/
+  /*font-size: 1.25rem;*/
 }
 
 .list-benefit {
@@ -465,13 +468,13 @@ picture {
 
 .card-info h2 {
   text-align: center;
-  margin-top: .5rem;
-  font-size: 1.25rem;
+  /*margin-top: .5rem;*/
+  /*font-size: 1.25rem;*/
 }
 
-.card-info p {
-  color: var(--text);
-}
+/*.card-info p {*/
+/*  color: var(--text);*/
+/*}*/
 
 /* ── Card Pricing & Packaging ── */
 .card-pricing-packaging {
@@ -488,8 +491,8 @@ picture {
 
 .card-pricing-packaging h2 {
   text-align: center;
-  margin-top: .5rem;
-  font-size: 1.25rem;
+  /*margin-top: .5rem;*/
+  /*font-size: 1.25rem;*/
 }
 
 .card-pricing-packaging-p {
@@ -776,12 +779,13 @@ ul {
 .h2-btn-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
 
 .h2-btn-wrapper h2 {
+  text-align: center;
   margin-bottom: .35rem;
 }
 
@@ -1111,6 +1115,7 @@ input[type="password"] {
 /* ── 17. Trust mini stats (contact.html) ── */
 
 /* ── Card Trust Mini ── */
+
 .card-trust-mini {
   background: var(--bg-light);
   border-color: var(--primary-dark);
@@ -1153,6 +1158,7 @@ input[type="password"] {
   font-family: 'Lora', serif;
   display: block;
 }
+
 .trust-mini span   {
   font-size: 0.75rem;
   color: var(--text-muted);
@@ -1180,6 +1186,11 @@ input[type="password"] {
   }
 
   /* Tablet media query */
+  @media (min-width: 150px) {
+    .feature-image-container {
+      height: var(--feature-image-height-mobile); /* Adjusts fixed height for larger screens */
+    }
+
   @media (min-width: 768px) {
     .feature-image-container {
       height: var(--feature-image-height-tablet); /* Adjusts fixed height for larger screens */
@@ -1226,4 +1237,4 @@ input[type="password"] {
       transform: scale(0.97);
     }
   }
-}
+}}
