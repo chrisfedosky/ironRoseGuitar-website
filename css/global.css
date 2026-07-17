@@ -256,6 +256,8 @@ main {
 
 /* ── Card-Feature ── */
 
+
+
 .card-feature {
   background: var(--bg-light);
   border-color: var(--primary-dark);
@@ -264,14 +266,21 @@ main {
   flex-direction: column;
   justify-content: space-around;
   gap: .35rem;
-  position: relative; /*what does this do?*/
+  position: relative;
   overflow: hidden;
 }
 
-.card-feature h2 {
-  text-align: center;
-  margin-top: .5rem;
-  font-size: 1.25rem;/*-- set 1.25rem for each feature ----------------------*/
+.feature-image-container {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.figure-image-container {
+  max-width: 100%;
+  height: auto;
 }
 
 .feature-image {
@@ -279,13 +288,6 @@ main {
   height: auto;
   object-fit: contain;
   object-position: center;
-  display: block;
-  border: 1px solid black;
-}
-/*-- will potentially be used to finalize image layouts --*/
-.feature-image-container {
-  max-width: 100%;
-  height: auto;
 }
 
 .figure-image-caption {
