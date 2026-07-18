@@ -1,4 +1,5 @@
 (function () {
+    console.log('includes.js loaded');
 
     function inject(targetId, filePath, callback) {
         const target = document.getElementById(targetId);
@@ -60,8 +61,8 @@
             footer.appendChild(script);
         }
     });
-
 })();
+
 
 
 
