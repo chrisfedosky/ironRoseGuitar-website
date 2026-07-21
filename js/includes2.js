@@ -1,19 +1,19 @@
 (function () {
-    console.log('includes.js loaded');
+    console.log('includes2.js loaded');
 
     function inject(targetId, filePath, callback) {
         const target = document.getElementById(targetId);
         if (!target) return;
         fetch(filePath)
             .then(function (r) {
-                if (!r.ok) { console.warn('includes.js: could not load ' + filePath); return ''; }
+                if (!r.ok) { console.warn('includes2.js: could not load ' + filePath); return ''; }
                 return r.text();
             })
             .then(function (html) {
                 target.innerHTML = html;
                 if (typeof callback === 'function') callback();
             })
-            .catch(function (e) { console.warn('includes.js: fetch failed for ' + filePath, e); });
+            .catch(function (e) { console.warn('includes2.js: fetch failed for ' + filePath, e); });
     }
 
     function setActiveLink() {
@@ -43,7 +43,7 @@
         if (header) {
             console.log('Header injected');
             const script = document.createElement('script');
-            script.src = '/js/nav.js';
+            script.src = '/js/nav2.js';
             script.onload = function() {
                 console.log('nav.js loaded in header');
             };
@@ -54,7 +54,7 @@
         if (footer) {
             console.log('Footer injected');
             const script = document.createElement('script');
-            script.src = '/js/nav.js';
+            script.src = '/js/2nav.js';
             script.onload = function() {
                 console.log('nav.js loaded in footer');
             };
