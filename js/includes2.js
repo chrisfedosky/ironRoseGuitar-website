@@ -45,7 +45,7 @@
             const script = document.createElement('script');
             script.src = '/js/nav2.js';
             script.onload = function() {
-                console.log('nav.js loaded in header');
+                console.log('nav2.js loaded in header');
             };
             header.appendChild(script);
         }
@@ -54,9 +54,9 @@
         if (footer) {
             console.log('Footer injected');
             const script = document.createElement('script');
-            script.src = '/js/2nav.js';
+            script.src = '/js/nav2.js';
             script.onload = function() {
-                console.log('nav.js loaded in footer');
+                console.log('nav2.js loaded in footer');
             };
             footer.appendChild(script);
         }
