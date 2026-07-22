@@ -1374,7 +1374,7 @@ input[type="password"] {
 }}
 
 /* LAUNCH FIX: Overrides any old messy code above it */
-.your-bento-cell-div {
+.hero-image-cell {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1382,7 +1382,7 @@ input[type="password"] {
   overflow: hidden;
 }
 
-.your-bento-cell-div img {
+.hero-image-cell img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Locks the image inside the bento boundary */
