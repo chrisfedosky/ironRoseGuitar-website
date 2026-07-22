@@ -45,7 +45,7 @@
         <div class="card card-form" style="grid-area: form">
             <h2>What’s your musical goal? (No wrong answers!)</h2>
 
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
 
                 <input type="hidden" name="access_key" value="73851e33-fb44-47a8-9bd2-2d33b63f19b9"><!-- TODO professionally mask -->
 
@@ -73,19 +73,20 @@
 
                     <span class="form-error" id="email-error" role="alert"></span>
                 </div>
-                <!-- should we have a phone number field? Here is the Netlify div: -->
+
                 <!-- Phone -->
                 <div class="form-group">
                     <label class="form-label" for="phone">
                         Phone number <span class="form-optional">(optional. for those who prefer to call or text!)</span>
                     </label>
                     <input
-                            class="form-input"
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="(608) 555-0123"
-                            autocomplete="tel"
+                        class="form-input"
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="(608) 555-0123"
+                        autocomplete="tel"
+                        maxlength="14"
                     >
                 </div>
 
@@ -195,6 +196,33 @@
 
 <script src="/js/includes2.js"></script>
 <script src="/js/nav2.js"></script>
+
+<!-- 3. Safe Phone Formatter (Handles Optional Fields) -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const phoneInput = document.getElementById('phone');
+
+        if (phoneInput) {
+            phoneInput.addEventListener('input', (e) => {
+                let input = e.target.value.replace(/\D/g, '');
+                let formatted = '';
+
+                // If the user clears the field completely, leave it empty
+                if (input.length === 0) {
+                    e.target.value = '';
+                    return;
+                }
+
+                if (input.length > 0) formatted = '(' + input.substring(0, 3);
+                if (input.length > 3) formatted += ') ' + input.substring(3, 6);
+                if (input.length > 6) formatted += '-' + input.substring(6, 10);
+
+                e.target.value = formatted;
+            });
+        }
+    });
+</script>
+
 <script src="/js/form.js"></script>
 </body>
 </html>
