@@ -303,12 +303,12 @@ main {
 }
 
 .card-hero h1 {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .card-hero h2 {
   /*font-size: 1.15rem;*/
-  text-align: center;
+  /*text-align: center;*/
 }
 
 /* ── Card-Feature ── */
@@ -325,30 +325,31 @@ main {
   overflow: hidden;
 }
 
-.feature-image-container {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.feature-image {
+/* Ensure the bento box strictly obeys your grid-template-areas */
+.hero-image-cell {
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  object-position: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.figure-image-caption {
+/* Force the image to crop beautifully into the bento cell */
+.hero-image-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops the edges cleanly instead of breaking the grid */
+}
+
+/* Clear, high-contrast caption styling */
+.bento-caption {
+  margin: 0;
+  padding: 0.75rem;
   font-size: 0.9rem;
   text-align: center;
 }
 
-picture {
-  margin-bottom: 0.5rem;
-}
 
 .feature-main {
   display: flex;
@@ -1372,3 +1373,17 @@ input[type="password"] {
   }
 }}
 
+/* LAUNCH FIX: Overrides any old messy code above it */
+.your-bento-cell-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.your-bento-cell-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Locks the image inside the bento boundary */
+}
