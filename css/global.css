@@ -132,6 +132,10 @@ main {
   gap: .5rem;/* adjusts Biz name spacing */
 }
 
+.brand a:hover {
+  text-decoration: none;
+}
+
 .header-logo {
   width: 45px;
   border-radius: 50%;/* logo is still not centered and there is too much whitespace around it. */
@@ -316,7 +320,7 @@ main {
 .card-feature {
   background: var(--bg-light);
   border-color: var(--primary-dark);
-
+  /*-- affect feature image card from expanding too far --*/
   width: 100%;
   max-width: 600px;
 
@@ -344,12 +348,11 @@ main {
 .hero-image-cell img {
   width: 100%;
   height: auto;
-  max-height: 400px;
+  max-height: 400px;/* Important!, adjusts feature image max height --*/
   object-fit: cover; /* Crops the edges cleanly instead of breaking the grid */
-  object-position: top center ;
+  object-position: top center ;/*-- can recenter the image, use object-position: 50% 20%; --*/
 }
 
-.bento-card {}
 
 
 /* Clear, high-contrast caption styling */
