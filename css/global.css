@@ -348,7 +348,7 @@ main {
 .hero-image-cell img {
   width: 100%;
   height: auto;
-  max-height: 400px;/* Important!, adjusts feature image max height --*/
+  max-height: 500px;/* Important!, adjusts feature image max height --*/
   object-fit: contain; /* 'cover' Crops the edges cleanly instead of breaking the grid */
   /*object-position: top center ;!*-- can recenter the image, use object-position: 50% 20%; --*!*/
 }
