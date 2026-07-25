@@ -24,6 +24,7 @@ img, video { max-width: 100%; display: block; }
   --text:             hsl(0, 0%, 0%);
   --text-muted:       hsl(2, 12%, 43%);
   --white:        hsl(0, 0%, 100%);
+  --white-muted: hsl(0, 0%, 90%);
 
   --shadow-s:
   inset 0 1px 2px hsla(0, 0%, 100%, 0.1),
@@ -296,14 +297,17 @@ main {
   position: relative; z-index: 1;
 }
 /* hero is picked out white text color */
-.card-hero h1,
-.card-hero h2,
-.card-hero p  {
+.card-hero h1, p  {
   color: var(--white);
 }
+
+.card-hero h2 {
+  color: var(--white-muted);
+}
+
 /* gives text a touch of transparency */
 .card-hero p  {
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.85);
 }
 
 .card-hero h1 {
@@ -545,7 +549,7 @@ main {
 .card-info {
   background: var(--bg-light);
   border-color: var(--primary-dark);
-  color: var(--text);
+  color: black;
   min-height: 260px;
   display: flex;
   flex-direction: column;
@@ -562,9 +566,9 @@ main {
   /*font-size: 1.25rem;*/
 }
 
-/*.card-info p {*/
-/*  color: var(--text);*/
-/*}*/
+.card-info p {
+  color: var(--text);
+}
 
 /* ── Card Pricing & Packaging ── */
 .card-pricing-packaging {
@@ -819,7 +823,7 @@ ul {
 
 .btn:active {
   /* Darker shade for instant feedback???? */
-  background-color: hsl(211 100% 35%);
+  background-color: var(--accent-secondary);
   transform: scale(0.97);
 }
 
@@ -827,7 +831,6 @@ ul {
   background: var(--accent-light);
   color: var(--white);
   border-color: var(--accent);
-  /*margin-top: .5rem;!*-- gives cta btn breathing room -- *!*/
 }
 
 .btn-primary:hover {
@@ -841,7 +844,7 @@ ul {
 .btn-secondary {
   background: var(--primary-light);
   color: var(--white);
-  border-color: var(--accent-secondary-light);
+  border-color: var(--accent-secondary);
 }
 
 .btn-secondary:hover  {
