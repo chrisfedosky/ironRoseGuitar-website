@@ -321,8 +321,8 @@ main {
   background: var(--bg-light);
   border-color: var(--primary-dark);
   /*-- affect feature image card from expanding too far --*/
-  width: 100%;
-  max-width: 600px;
+  /*width: 100%;*/
+  /*max-width: 600px;*/
 
   min-height: 260px;
   display: flex;
