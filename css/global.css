@@ -66,7 +66,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  /*font-size: clamp(1rem, 4vw, 1.23rem);*//* what does this do? --*/
+  /*font-size: clamp(1rem, 4vw, 1.23rem);*/
 }
 
 /* ¡Lora is not in the assets folder! */
@@ -604,6 +604,9 @@ main {
   /*font-size: 1.25rem;*/
 }
 
+.card-qn p {
+  color: var(--text);
+}
 /* ── Card Contact Steps ── */
 .card-contact-steps {
   background: var(--bg-light);
@@ -1182,6 +1185,7 @@ input[type="password"] {
 .expect-step p {
   font-size: 0.875rem;
   margin: 0;
+  color: var(--text) !important;
 }
 
 /* ── 17. Trust mini stats (contact.html) ── */
@@ -1198,6 +1202,9 @@ input[type="password"] {
   gap: .35rem;
   position: relative;
   overflow: hidden;
+}
+.card-trust-mini p {
+  color: var(--text);
 }
 
 .card-trust-mini h3 {
