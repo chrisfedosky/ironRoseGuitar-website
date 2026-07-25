@@ -14,25 +14,25 @@
 /* Tablet: 2 columns */
 @media (min-width: 768px) {
   .bento-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "hero hero"
-      "confidence confidence"
-      "format format"
-      "pricing pricing"
-      "logistics logistics"
-      "cta cta";
+      "hero hero hero"
+      "confidence confidence confidence"
+      "format format format"
+      "pricing pricing pricing"
+      "logistics logistics cta";
   }
 }
 
 /* Desktop: 3 columns, format spans right */
 @media (min-width: 1024px) {
   .bento-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      "hero hero hero"
-      "confidence confidence pricing"
-      "format format pricing"
-      "logistics logistics cta";
+      "hero hero hero hero"
+      "confidence confidence confidence confidence"
+      "format format format format"
+      "pricing pricing pricing pricing"
+      "logistics logistics logistics cta";
   }
 }

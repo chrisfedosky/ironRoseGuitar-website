@@ -17,23 +17,23 @@
 /* Tablet: photo beside intro, story spans full width */
 @media (min-width: 768px) {
   .bento-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "hero   hero"
-      "story   story"
-      "creds creds"
-      "values  values"
-      "cta     cta";
+      "hero hero hero"
+      "story story story"
+      "creds creds creds"
+      "values values cta";
   }
 }
 
 /* Desktop: 3 columns, photo anchors right and spans rows */
 @media (min-width: 1024px) {
   .bento-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      "hero   hero   hero"
-      "story   story  creds"
-      "values   values   cta";
+      "hero hero hero hero"
+      "story story story story"
+      "creds creds creds creds"
+      "values values values cta";
   }
 }

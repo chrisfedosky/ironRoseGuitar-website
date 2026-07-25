@@ -13,13 +13,13 @@
 /* Tablet: 2 columns */
 @media (min-width: 768px) {
   .bento-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "hero    hero"
-      "review review"
-      "trust   trust"
-      "benefit benefit"
-      "faq     cta";
+      "hero    hero hero"
+      "review review review"
+      "trust   trust trust"
+      "benefit benefit benefit"
+      "faq   faq  cta";
   }
 }
 
@@ -29,8 +29,9 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "hero hero hero hero"
-      "review review review benefit"
-      "trust trust trust cta"
+      "review review review review"
+      "trust trust trust trust"
+      "benefit benefit benefit benefit"
       "faq faq faq cta";
   }
 }
