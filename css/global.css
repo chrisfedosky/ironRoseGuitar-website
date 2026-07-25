@@ -224,34 +224,6 @@ main {
   text-align: center;
 }
 
-/*!* Hamburger *!*/
-/*.nav-toggle {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  justify-content: center;*/
-/*  gap: 5px;*/
-/*  background: none;*/
-/*  border: none;*/
-/*  cursor: pointer;*/
-/*  padding: 6px;*/
-/*  width: 36px;*/
-/*  height: 36px;*/
-/*}*/
-
-/*.nav-toggle span {*/
-/*  display: block;*/
-/*  width: 22px;*/
-/*  height: 2px;*/
-/*  background: rgba(255,255,255,0.8);*/
-/*  border-radius: 2px;*/
-/*  transform-origin: center;*/
-/*  transition: transform 0.25s ease, opacity 0.2s ease, width 0.2s ease;*/
-/*}*/
-
-/*.nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }*/
-/*.nav-open .nav-toggle span:nth-child(2) { opacity: 0; width: 0; }*/
-/*.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }*/
-
 /* ── 8. Bento grid container ── */
 .bento-grid {
   display: grid;
@@ -378,6 +350,7 @@ main {
 
 .sunrise {
   background-image: radial-gradient(circle at bottom, var(--primary) 0%, var(--tertiary-light) 40%, var(--accent-secondary-light) 100%);
+
 }
 
 
@@ -453,9 +426,9 @@ main {
   margin-bottom: .5rem;
 }
 
-/*.card-feature2 p {*/
-/*  color: var(--text);*/
-/*}*/
+.card-feature2 p {
+  color: var(--text);
+}
 
 
 /* ── Card Form ── */
@@ -549,7 +522,7 @@ main {
 .card-info {
   background: var(--bg-light);
   border-color: var(--primary-dark);
-  color: black;
+  color: var(--text);
   min-height: 260px;
   display: flex;
   flex-direction: column;
@@ -1341,49 +1314,7 @@ input[type="password"] {
 
   /* Desktop media query */
 @media (min-width: 1024px) {
-  .site-header {
-    flex-direction: row;
-    align-items: center;
-    padding: 0 var(--pad);
-    height: 68px;
-    gap: 0;
-  }
 
-  .header-top {
-    flex: 1;
-    border-bottom: none;
-    padding: 0;
-  }
-
-  .nav-toggle {
-    display: none;
-  }
-
-  .site-nav {
-    max-height: none;
-    opacity: 1;
-    overflow: visible;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .nav-links {
-    flex-direction: row;
-    gap: 0;
-    padding: 0;
-    border-top: none;
-  }
-
-  .nav-links li a {
-    padding: 0 0.75rem;
-    border-bottom: none;
-    font-size: 0.9rem;
-  }
-
-  .nav-cta {
-    margin: 0;
-  }
 }
 
 /* ── 14. Reduced motion ── */
@@ -1395,23 +1326,6 @@ input[type="password"] {
   }
 }
 
-  /*!* Tablet media query *!*/
-  /*@media (min-width: 150px) {*/
-  /*  .feature-image-container {*/
-  /*    height: var(--feature-image-height-mobile); !* Adjusts fixed height for larger screens *!*/
-  /*  }*/
-
-  /*@media (min-width: 768px) {*/
-  /*  .feature-image-container {*/
-  /*    height: var(--feature-image-height-tablet); !* Adjusts fixed height for larger screens *!*/
-  /*  }*/
-
-  /*} !* Desktop media query *!*/
-  /*@media (min-width: 1024px) {*/
-  /*  .feature-image-container {*/
-  /*    height: var(--feature-image-height-desktop); !* Adjusts fixed height for desktop views *!*/
-  /*  }*/
-  /*}*/
 
 @media (min-width: 768px) {
   .site-footer {
@@ -1439,29 +1353,3 @@ input[type="password"] {
     transform: scale(0.97);
   }
 }}
-
-/* -- make desktop feature into a row (does not work right now, but might if necessary in the future-- */
-/*@media (min-width: 1024px) {*/
-/*  .card-feature {*/
-/*    !* Change from column to row layout *!*/
-/*    flex-direction: row;*/
-
-/*    !* Centers items vertically relative to each other *!*/
-/*    align-items: center;*/
-
-/*    !* Adds a gap between your text/content and the image wrapper *!*/
-/*    gap: 2rem;*/
-
-/*    !* Crucial: You may want to increase this max-width now, *!*/
-/*    !* since two elements side-by-side need more breathing room. *!*/
-/*    max-width: 900px;*/
-/*  }*/
-
-/*  !* Give your text block and image wrapper equal width inside the row *!*/
-/*  .card-feature > .feature-main,*/
-/*  .card-feature > .hero-image-cell { !* Your image wrapper div *!*/
-/*    flex: 1;*/
-/*  }*/
-/*}*/
-
-
