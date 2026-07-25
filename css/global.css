@@ -66,7 +66,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  /*font-size: clamp(1rem, 4vw, 1.23rem);*/
+  font-size: clamp(1rem, 4vw, 1.23rem);
 }
 
 /* ¡Lora is not in the assets folder! */
@@ -621,10 +621,10 @@ main {
   padding-bottom: 2.5rem;
 }
 
-.card-contact-steps h3 {
+.card-contact-steps h2 {
   text-align: center;
   margin-top: .25rem;
-  font-size: 1.15rem;
+  /*font-size: 1.15rem;*/
 }
 
 /* ── Card-CTA ── */
@@ -1207,10 +1207,10 @@ input[type="password"] {
   color: var(--text);
 }
 
-.card-trust-mini h3 {
+.card-trust-mini h2 {
   text-align: center;
   margin-top: .25rem;
-  font-size: 1.25rem;
+  /*font-size: 1.25rem;*/
 }
 
 .trust-mini {
