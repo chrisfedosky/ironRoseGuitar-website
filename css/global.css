@@ -316,6 +316,11 @@ main {
   overflow: hidden;
 }
 
+.card-feature h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
 .hero-image-wrapper {
   /*background: var(--primary-light);*/
   border: 1px solid black;
@@ -807,17 +812,17 @@ ul {
 }
 
 .btn-tertiary {
-  background: var(--tertiary-light);
+  background: var(--accent-secondary-light);
   color: var(--text);
-  border-color: var(--accent-secondary-light);
+  border-color: var(--tertiary);
 }
 
 .btn-tertiary:hover {
   opacity: 0.88;
   text-decoration: none;
-  background: var(--primary-light);
+  background: var(--tertiary-light);
   color: var(--white);
-  border-color: var(--accent-light)
+  border-color: var(--accent-secondary)
 }
 
 .btn-lessons-wrapper {
