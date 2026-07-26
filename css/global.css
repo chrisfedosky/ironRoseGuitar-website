@@ -96,8 +96,13 @@ p  {
   line-height: 1.75;
 }
 
-a { color: var(--primary); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a { color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 /* ── 5. Layout shell ── */
 main {
@@ -139,7 +144,9 @@ main {
 
 .header-logo {
   width: 45px;
-  border-radius: 50%;/* logo is still not centered and there is too much whitespace around it. */
+  border-radius: 50%;
+
+  /* logo is still not centered and there is too much whitespace around it. */
   /*object-fit: fill;*/
   /*align-items: center;*/
   height: auto;
@@ -426,7 +433,7 @@ main {
   min-height: 260px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: .35rem;
   position: relative;
   overflow: hidden;
