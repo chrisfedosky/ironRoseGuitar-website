@@ -345,6 +345,11 @@ main {
   justify-content: center;
 }
 
+.h2-margin-correction {
+  margin-bottom: 0.1rem;
+}
+
+
 /* Force the image to crop beautifully into the bento cell */
 .hero-image-cell img {
   max-width: 100%; /* or width: 100% ? */
@@ -372,7 +377,7 @@ main {
   justify-content: space-around;
   align-items: center;
   gap: .8rem;
-  margin-top: .65rem;
+  /*margin-top: .65rem;*/
   margin-bottom: .55rem;
 }
 
@@ -831,12 +836,13 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  margin-bottom: 0.55rem;
 }
 
-.btn-lessons-wrapper h2 {
-  text-align: center;
-  margin-bottom: .35rem;
-}
+/*.btn-lessons-wrapper h2 {*/
+/*  text-align: center;*/
+/*  margin-bottom: .35rem;*/
+/*}*/
 
 .btn-outline {
   background: transparent;
