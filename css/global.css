@@ -820,7 +820,7 @@ ul {
   border-color: var(--accent-light)
 }
 
-.h2-btn-wrapper {
+.btn-lessons-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -828,7 +828,7 @@ ul {
   gap: 0.5rem;
 }
 
-.h2-btn-wrapper h2 {
+.btn-lessons-wrapper h2 {
   text-align: center;
   margin-bottom: .35rem;
 }
@@ -839,7 +839,7 @@ ul {
   color: var(--white);
 }
 
-.btn-bullet_wrapper {
+.btn-sample_wrapper {
   text-align: center;
 }
 
