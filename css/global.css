@@ -569,22 +569,21 @@ main {
   background: var(--bg-light);
   border-color: var(--primary-dark);
   min-height: 260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: .5rem;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: space-between;*/
+  /*gap: .5rem;*/
   position: relative;
   overflow: hidden;
 }
 
 .card-qn h2 {
-  /*margin-top: .5rem;*/
+  margin-bottom: 1rem;
   /*font-size: 1.25rem;*/
 }
 
 .card-qn p {
   color: var(--text);
-
 
 
 }
@@ -649,7 +648,7 @@ main {
   justify-content: space-between;
   gap: .5rem;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 1rem;/*-- what is this? --*/
 }
 
 .card-multi-instrument-strip-wrapper {
@@ -718,8 +717,9 @@ blockquote {
 .icon-wrapper {
   display: flex;
   justify-content: flex-start;
-  gap: .75rem;
+  gap: .65rem;
   align-items: center;
+  /*margin: 0;*/
 }
 
 .icon-wrapper h2 {
@@ -729,8 +729,8 @@ blockquote {
 .my-icon {
   width: 24px;
   height: 24px;
-  fill: currentColor;
-  stroke: currentColor;
+  /*fill: currentColor;*/
+  /*stroke: currentColor;*/
 }
 
 .my-icon-review {
@@ -1314,24 +1314,14 @@ input[type="password"] {
   }
 }
 
-
-
 /* Desktop media query */
 @media (min-width: 1024px) {
-
-  /*.btn-primary {*/
-  /*  margin-top: 0.75rem;*/
-  /*}*/
 
   .site-header {
     padding: var(--pad);
     height: 75px;
   }
 }
-
-
-
-
 
 /* 3. Desktop/Pointer Enhancements (Hover Strategy) */
 @media (hover: hover) and (pointer: fine) {
