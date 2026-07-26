@@ -579,7 +579,8 @@ main {
 
 .card-qn h2 {
   margin-bottom: 1rem;
-  /*font-size: 1.25rem;*/
+  font-size: 1.35rem;
+  text-align: center;
 }
 
 .card-qn p {
@@ -719,11 +720,8 @@ blockquote {
   justify-content: flex-start;
   gap: .65rem;
   align-items: center;
+  margin-bottom: 0.35rem;
   /*margin: 0;*/
-}
-
-.icon-wrapper h2 {
-  font-size: 1.25rem !important;
 }
 
 .my-icon {
