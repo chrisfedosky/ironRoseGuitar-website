@@ -418,7 +418,7 @@ main {
   min-height: 260px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: .35rem;/* this is why there was no gap between flex items */
   position: relative;
   overflow: hidden;
@@ -457,9 +457,7 @@ main {
   gap: .75rem;
 }
 
-.list-item-benefit {
-
-}
+.list-item-benefit {}
 
 /* ── Card-Trust ── */
 .card-trust {
@@ -496,8 +494,6 @@ main {
   color: var(--text);
 }
 
-
-
 /* ── Card-Info ── */
 .card-info {
   background: var(--bg-light);
@@ -530,7 +526,7 @@ main {
   min-height: 260px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: .75rem;
   position: relative;
   overflow: hidden;
@@ -573,7 +569,7 @@ main {
   min-height: 260px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: .5rem;
   position: relative;
   overflow: hidden;
@@ -594,7 +590,7 @@ main {
   min-height: 260px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: .35rem;
   position: relative;
   overflow: hidden;
@@ -603,7 +599,7 @@ main {
 
 .card-contact-steps h2 {
   text-align: center;
-  margin-top: .25rem;
+  /*margin-top: .25rem;*/
   /*font-size: 1.15rem;*/
 }
 
@@ -1161,7 +1157,7 @@ input[type="password"] {
 .expect-step p {
   font-size: 0.875rem;
   margin: 0;
-  color: var(--text) !important;
+  color: var(--text);
 }
 
 /* ── 17. Trust mini stats (contact.html) ── */
@@ -1185,7 +1181,7 @@ input[type="password"] {
 
 .card-trust-mini h2 {
   text-align: center;
-  margin-top: .25rem;
+  margin-bottom: 0.45rem;
   /*font-size: 1.25rem;*/
 }
 
@@ -1220,12 +1216,6 @@ input[type="password"] {
 }
 
 /* ----Media Queries ------------------------------------*/
-
-/* ---- hamburger related ----*/
-/*@media (min-width: 150px) {*/
-/*  !*.feature-image-container {*!*/
-/*  !*  height: var(--feature-image-height-mobile); !* Adjusts fixed height for larger screens *!*!*/
-/*  !*}*!*/
 
 @media (min-width: 768px) {
   .site-header {
