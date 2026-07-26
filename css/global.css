@@ -584,6 +584,9 @@ main {
 
 .card-qn p {
   color: var(--text);
+
+
+
 }
 /* ── Card Contact Steps ── */
 .card-contact-steps {
@@ -717,6 +720,10 @@ blockquote {
   justify-content: flex-start;
   gap: .75rem;
   align-items: center;
+}
+
+.icon-wrapper h2 {
+  font-size: 1.25rem !important;
 }
 
 .my-icon {
