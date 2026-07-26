@@ -314,45 +314,13 @@ main {
   border: 1px solid black;
   padding: 1.5rem 1.25rem 1rem;
   border-radius: var(--radius);
+  margin-bottom: 0.75rem;
 }
-
-/*.vinyl-rings {*/
-/*  background: repeating-radial-gradient(*/
-/*          circle at center,*/
-/*          #2c3e50 0px,*/
-/*          #2c3e50 4px,*/
-/*          #1a252f 4px,*/
-/*          #1a252f 8px*/
-/*  );*/
-/*}*/
-
-/*.fish-scales {*/
-/*  background-color: #0093e9;*/
-/*  background-image:*/
-/*          radial-gradient(circle at 50% 0%, rgba(255,255,255,0.2) 24%, transparent 25%),*/
-/*          radial-gradient(circle at 0% 50%, rgba(255,255,255,0.2) 24%, transparent 25%),*/
-/*          radial-gradient(circle at 100% 50%, rgba(255,255,255,0.2) 24%, transparent 25%),*/
-/*          radial-gradient(circle at 50% 100%, rgba(255,255,255,0.2) 24%, transparent 25%);*/
-/*  background-size: 60px 60px;*/
-/*}*/
-
-/*.polka-dots {*/
-/*  background-color: #f0f0f0;*/
-/*  background-image: radial-gradient(#ff4757 20%, transparent 20%);*/
-/*  background-size: 40px 40px;*/
-/*}*/
-
-/*.cyber-panel {*/
-/*  background-color: #0b0c10;*/
-/*  background-image: radial-gradient(ellipse closest-side at center, #1f2833 40%, #0b0c10 100%);*/
-/*  background-size: 30px 30px;*/
-/*}*/
 
 .sunrise {
   background-image: radial-gradient(circle at bottom, var(--primary) 0%, var(--tertiary-light) 40%, var(--accent-secondary-light) 100%);
 
 }
-
 
 /* Ensure the bento box strictly obeys your grid-template-areas */
 .hero-image-cell {
