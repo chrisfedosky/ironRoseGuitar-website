@@ -475,6 +475,14 @@ main {
   font-size: 1.15rem;
 }
 
+/* Mobile default: show mobile embed, hide desktop embed */
+.soundcloud-desktop {
+  display: none !important;
+}
+.soundcloud-mobile {
+  display: block !important;
+}
+
 /* ── Card-Trust ── */
 .card-trust {
   background: var(--bg-light);
@@ -1334,6 +1342,16 @@ input[type="password"] {
     height: 75px;
   }
 }
+
+/*!* Tablet and Desktop breakpoint *!*/
+/*@media (min-width: 768px) {*/
+/*  .soundcloud-mobile {*/
+/*    display: none !important;*/
+/*  }*/
+/*  .soundcloud-desktop {*/
+/*    display: block !important;*/
+/*  }*/
+/*}*/
 
 /* 3. Desktop/Pointer Enhancements (Hover Strategy) */
 @media (hover: hover) and (pointer: fine) {
