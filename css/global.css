@@ -475,13 +475,16 @@ main {
   font-size: 1.15rem;
 }
 
+.soundcloud-iframe {}
+
+
 /* Mobile default: show mobile embed, hide desktop embed */
-.soundcloud-desktop {
-  display: none !important;
-}
-.soundcloud-mobile {
-  display: block !important;
-}
+/*.soundcloud-desktop {*/
+/*  display: none !important;*/
+/*}*/
+/*.soundcloud-mobile {*/
+  /*display: block !important;*/
+/*}*/
 
 /* ── Card-Trust ── */
 .card-trust {
