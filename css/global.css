@@ -1320,12 +1320,6 @@ input[type="password"] {
 }
 
 @media (min-width: 1050px) {
-
-}
-
-
-
-@media (min-width: 1050px) {
   .site-footer {
     flex-direction: row;
     align-items: flex-start;
@@ -1337,8 +1331,6 @@ input[type="password"] {
     max-width: 240px;
   }
 }
-
-/* Desktop media query */
 @media (min-width: 1050px) {
 
   .site-header {
@@ -1347,15 +1339,9 @@ input[type="password"] {
   }
 }
 
-/*!* Tablet and Desktop breakpoint *!*/
-/*@media (min-width: 768px) {*/
-/*  .soundcloud-mobile {*/
-/*    display: none !important;*/
-/*  }*/
-/*  .soundcloud-desktop {*/
-/*    display: block !important;*/
-/*  }*/
-/*}*/
+/*---- Desktop media queries ~1280px+ -------- */
+
+@media (min-width: 1280px) {}
 
 /* 3. Desktop/Pointer Enhancements (Hover Strategy) */
 @media (hover: hover) and (pointer: fine) {
