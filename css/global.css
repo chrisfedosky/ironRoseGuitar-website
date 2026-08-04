@@ -1248,6 +1248,7 @@ input[type="password"] {
   color: var(--text-muted);
 }
 
+
 /* ----Media Queries ------------------------------------*/
 
 @media (min-width: 768px) {
