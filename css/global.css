@@ -1251,7 +1251,7 @@ input[type="password"] {
 
 /* ----Media Queries ------------------------------------*/
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .site-header {
     flex-direction: row;
     align-items: center;
@@ -1305,27 +1305,27 @@ input[type="password"] {
 
 
 /*-- is this necessary? --*/
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .mobile-nav {
     display: none !important;
   }
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .nav-links li:nth-child(2) a,
   .nav-links li:nth-child(3) a {
     display: block;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 
 }
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .site-footer {
     flex-direction: row;
     align-items: flex-start;
