@@ -621,7 +621,7 @@ main {
   min-height: 260px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: .35rem;
   position: relative;
   overflow: hidden;
