@@ -424,6 +424,7 @@ main {
   gap: .35rem;/* this is why there was no gap between flex items */
   position: relative;
   overflow: hidden;
+  margin-bottom: 1.25rem;
 }
 
 .card-form h2 {
