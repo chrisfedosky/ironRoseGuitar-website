@@ -686,11 +686,43 @@ main {
   align-items: center;
 }
 /* ------  Technical Pages ---------------  */
+/*-- TODO: style privacy & terms page here --*/
 
+.privacy-main strong, .terms-main strong {
+  font-size: 1.25rem;
+}
 
+.card-technical {
+  background-color: var(--bg);
+  padding: 1.25rem !important;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
 
+.privacy-container p, .terms-container p {
+  color: var(--text);
+  font-size: 1.15rem;
+}
+.privacy-container, .terms-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: .75rem;
+}
 
+.technical-hero {
+  text-align: center;
+  padding: 1rem !important;
+}
 
+.privacy-main strong, .terms-main strong {
+  font-size: 1.25rem;
+}
+
+.privacy-list {
+  padding-left: 1rem;
+}
 
 /* ------  Reviews ---------------  */
 
