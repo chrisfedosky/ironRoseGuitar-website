@@ -769,6 +769,14 @@ blockquote {
   margin-bottom: .85rem;
 }
 
+.expect-steps p {
+  color: var(--text);
+}
+
+.step-number3 {
+  margin-bottom: 1rem;
+}
+
 /* photo galleries */
 .student-pic-gallery {
   display: flex;
@@ -1200,6 +1208,7 @@ input[type="password"] {
 .expect-steps {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 1.1rem;
   margin-top: 1rem;
 }
@@ -1236,6 +1245,10 @@ input[type="password"] {
   font-size: 0.875rem;
   margin: 0;
   color: var(--text);
+}
+
+.expect-step-note {
+  margin-top: 1rem;
 }
 
 /* ── 17. Trust mini stats (contact.html) ── */
