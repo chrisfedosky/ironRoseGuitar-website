@@ -10,4 +10,4 @@
 /dataSources.local.xml
 # Ignore macOS system files everywhere in the project
 .DS_Store
-
+node_modules/
