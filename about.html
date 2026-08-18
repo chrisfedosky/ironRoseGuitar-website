@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Iron Rose Guitar</title>
-  <meta name="description" content="🎸 Meet Chris: A professional composer and recording artist bringing real-world music wisdom into every guitar lesson in Madison/Fitchburg.">
-  <meta name="keywords" content="guitar lessons, busy people, online guitar lessons, in-person guitar lessons, Fitchburg, WI, Madison, WI, Verona, WI">
-  <link rel="stylesheet" href="/css/global.css">
-  <link rel="stylesheet" href="/css/pages/about.css">
-  <!-- update and make sure it is consistent in the 4 areas -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MusicTeacher",
-      "name": "YOUR BUSINESS NAME",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Fitchburg",
-        "addressRegion": "WI"
-      },
-      "areaServed": ["Madison, WI", "Verona, WI", "Fitchburg, WI"],
-      "telephone": "+16086203679",
-      "url": "https://ironroseguitar.com/",
-      "sameAs": "https://maps.google.com/?cid=8478518634013434643"
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Lessons in Madison & Fitchburg | Creative Music Lessons with Chris</title>
+    <meta name="description" content="Find your creative escape with professional guitar lessons in Madison and Fitchburg. Tailored lessons for adults and teens—no judgment, just music.">
+    <meta name="keywords" content="guitar lessons Madison WI, Fitchburg guitar teacher, adult guitar lessons, private guitar lessons WI, creative music lessons, beginner guitar lessons">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/pages/about.css">
+
+    <!-- Refined Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MusicTeacher",
+            "name": "Chris - Iron Rose Guitar",
+            "description": "Professional guitar teacher specializing in tailored lessons for adults and teens in Madison and Fitchburg.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Fitchburg",
+                "addressRegion": "WI"
+            },
+            "areaServed": ["Madison, WI", "Fitchburg, WI", "Verona, WI"],
+            "telephone": "+16086203679",
+            "url": "https://ironroseguitar.com/",
+            "sameAs": "https://maps.google.com/?cid=8478518634013434643"
+        }
+    </script>
 </head>
 <body>
 
   <header id="site-header" class="site-header"></header>
 
-  <main>
-    <div class="bento-grid">
+<main>
+    <!-- The main container is now a semantic section, not just a div -->
+    <section class="bento-grid" aria-label="About Chris and Iron Rose Guitar">
 
-      <!-- HERO -->
-      <div class="card card-hero" style="grid-area: hero">
-        <div class="eyebrow">Nice to meet you!</div>
-        <h1> From "Someday" to your first song.</h1>
-        <h2>No judgment, no boring drills, just the joy of making music!</h2>
-        <p>Whether you're looking for a creative outlet that builds confidence, or you're finally ready to pick up the instrument you’ve always loved, I help you <em>find your voice.</em></p>
-        <a href="/contact-web3forms.html" class="btn btn-primary">Book My Free Introductory Session</a>
-      </div>
+        <!-- 1. HERO SECTION (The Hook & CTA) -->
+        <section class="card card-hero" style="grid-area: hero;" aria-labelledby="hero-heading">
+            <div class="eyebrow">Nice to meet you!</div>
+          <!-- TODO: hero-heading css class update -->
+            <h1 id="hero-heading">From "Someday" to your first song.</h1>
+            <h2>No judgment, no boring drills, just the joy of making music!</h2>
+            <p>Whether you're looking for a creative outlet that builds confidence, or you're finally ready to pick up the instrument you’ve always loved, I help you <em>find your voice.</em></p>
+            <a href="/contact-web3forms.html" class="btn btn-primary">Book My Free Introductory Session</a>
+        </section>
 
-      <!-- PAGE FEATURE -->
-      <div class="card card-feature" style="grid-area: story;">
-        <div class="eyebrow">My Story</div>
+        <!-- 2. MY STORY SECTION (Authority & Connection) -->
+        <section class="card card-feature" style="grid-area: story;" aria-labelledby="story-heading">
+            <div class="eyebrow">My Professional Story</div>
+            <h2 id="story-heading">From Listener to Player: My Journey</h2>
 
-        <div class="hero-image-wrapper sunrise">
-          <div class="hero-image-cell">
-            <img src="assets/images/pics/enhanced2.1/About_profile_pic-fallback_LE_upscale_prime.500.webp"
-                 alt="Professional guitar teacher recording acoustic guitar in a Brooklyn music studio."
-                 loading="lazy">
+            <div class="hero-image-wrapper sunrise">
+                <div class="hero-image-cell">
+                    <img src="assets/images/pics/enhanced2.1/About_profile_pic-fallback_LE_upscale_prime.500.webp"
+                         alt="Chris, professional guitar teacher, tracking acoustic guitar in a Brooklyn music studio."
+                         loading="lazy">
 
-            <p class="bento-caption">"When I’m not teaching, I’m creating. This is me tracking acoustic guitar at a Trout Studios in Brooklyn, NYC; bringing real-world, professional music experience directly to your lessons!"</p>
-          </div>
-        </div>
-
-        <h2>From Listener to Player.</h2>
+                    <p class="bento-caption">"When I’m not teaching, I’m creating. This is me tracking acoustic guitar at a Trout Studios in Brooklyn, NYC; bringing real-world, professional music experience directly to your lessons!"</p>
+                </div>
+            </div>
+          <!-- TODO deal with the h2 situation -->
+          <h2>From Listener to Player.</h2>
 
         <div class="feature-main">
-          <p><strong>In 1987,</strong> I watched two summer camp counselors in a distant field figure out <strong>"Patience,"  -Guns n Roses</strong><strong><em> by ear!:</em></strong> a moment of pure magic that taught me music is about connection, not just notes.</p>
+          <!-- TODO deal with the css highlight class -->
+          <p><strong class="highlight">In 1987,</strong> I watched two summer camp counselors in a distant field figure out <strong>"Patience,"  -Guns n Roses</strong><strong><em> by ear!:</em></strong> a moment of pure magic that taught me music is about connection, not just notes.</p>
           <p><strong>That spark</strong> led to my first guitar and fueled my mission to help students of all ages find their own voice. Today, I help you unlock that same <strong>"aha!"</strong> moment and bring your favorite music to life on the strings.</p>
           <div class="quote-wrapper">
             <figure class="fig-quote-block">
-              <blockquote>
+              <blockquote aria-label="Student testimonial">
                 <p>"Thank you Chris for making the guitar fun for me!"</p>
               </blockquote>
               <figcaption>
@@ -88,17 +94,18 @@
             <p>
               "I’ve spent my career in every corner of the music world, from the groove of the upright bass to the precision of professional studio production and original composition. I don't just teach guitar; I share the secrets of how music actually works."
             </p>
+            <!-- TODO: update Soudcloud Lazy-loading plus from LMStudio -->
             <div class="soundcloud-iframe">
               <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2370840371&color=%23bc4d48&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ironroseguitar" title="Iron Rose Guitar" target="_blank" style="color: #cccccc; text-decoration: none;">Iron Rose Guitar</a> · <a href="https://soundcloud.com/ironroseguitar/sampler" title="NYC Recordings Medley" target="_blank" style="color: #cccccc; text-decoration: none;">NYC Recordings Medley</a></div>
             </div>
           </div>
         </div>
-      </div>
+        </section>
 
       <!-- CREDENTIALS -->
-      <div class="card card-bullet" style="grid-area: creds">
+      <section class="card card-bullet" style="grid-area: creds;" aria-labelledby="creds-heading">
         <div class="eyebrow">Background</div>
-        <h2>Training & Experience</h2>
+        <h2 id="creds-heading">My Training & Professional Experience</h2>
         <ul class="list-benefit">
           <li class="list-item-benefit">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chess-queen-icon lucide-chess-queen"><path d="M4 20a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="m12.474 5.943 1.567 5.34a1 1 0 0 0 1.75.328l2.616-3.402"/><path d="m20 9-3 9"/><path d="m5.594 8.209 2.615 3.403a1 1 0 0 0 1.75-.329l1.567-5.34"/><path d="M7 18 4 9"/><circle cx="12" cy="4" r="2"/><circle cx="20" cy="7" r="2"/><circle cx="4" cy="7" r="2"/></svg>
@@ -123,7 +130,7 @@
             <picture>
               <source srcset="assets/images/pics/enhanced2.0/About_multi_inst1-fallback1_LE_upscale_prime.webp" type="image/webp">
               <img src="assets/images/pics/enhanced2.0/About_multi_inst1-fallback1_LE_upscale_prime.jpg"
-                   alt="Creative, stylized photo of a guitar teacher playing an upright bass in a studio."
+                   alt="Chris, guitar teacher playing an upright bass in a studio."
                    width="800"
                    height="600"
                    loading="lazy"
@@ -132,7 +139,7 @@
             <picture>
               <source srcset="assets/images/pics/enhanced2.0/About_multi_inst2_LE_upscale_prime.webp" type="image/webp">
               <img src="assets/images/pics/enhanced2.0/About_multi_inst2_LE_upscale_prime.jpg"
-                   alt="Experienced guitar teacher recording music tracks behind studio glass."
+                   alt="Chris, experienced guitar teacher recording music tracks behind studio glass."
                    width="800"
                    height="600"
                    loading="lazy"
@@ -141,7 +148,7 @@
             <picture>
               <source srcset="assets/images/pics/enhanced2.0/About_multi_inst3-.webp" type="image/webp">
               <img src="assets/images/pics/enhanced2.0/About_multi_inst3-fallback.jpg"
-                   alt="Guitar teacher performing live on an upright bass in front of an art installation."
+                   alt="Chris, guitar teacher performing live on an upright bass in front of an art installation."
                    width="800"
                    height="600"
                    loading="lazy"
@@ -150,25 +157,25 @@
         </div>
       </div>
 
-      </div>
+      </section>
 
-      <!-- VALUES -->
-      <div class="card card-info" style="grid-area: values">
-        <div class="eyebrow">Teaching Philosophy</div>
-        <h3>Progress over perfection</h3>
-        <p>I focus on keeping you excited about your progress rather than stressing over perfect technique in the first week. We build solid habits by starting with the music that moves you.</p>
-        <h3>Theory with Purpose</h3>
-        <p>Learning here is about having fun, not feeling like a classroom. We incorporate music theory as a secondary tool to help you understand what’s happening inside the songs you're learning. It’s designed to make you a smarter player, not to give you more homework.</p>
-      </div>
+        <!-- 4. TEACHING PHILOSOPHY SECTION (De-risking the Experience) -->
+        <section class="card card-info" style="grid-area: values;" aria-labelledby="philosophy-heading">
+            <div class="eyebrow">Teaching Philosophy</div>
+            <h2 id="philosophy-heading">Progress Over Perfection: How We Learn</h2>
+            <p>I focus on keeping you excited about your progress rather than stressing over perfect technique in the first week. We build solid habits by starting with the music that moves you.</p>
+            <h3>Theory with Purpose</h3>
+            <p>Learning here is about having fun, not feeling like a classroom. We incorporate music theory as a secondary tool to help you understand what’s happening inside the songs you're learning. It’s designed to make you a smarter player, not to give you more homework.</p>
+        </section>
 
-      <!-- CTA -->
-      <div class="card card-cta" style="grid-area: cta">
-        <h2>Want to start playing?</h2>
-        <p>First introductory session is free. No experience needed, just bring your guitar and your curiosity.</p>
-        <a href="/contact-web3forms.html" class="btn btn-primary">Book My Free Introductory Session</a>
-      </div>
+        <!-- 5. CTA SECTION (The Conversion Point) -->
+        <section class="card card-cta" style="grid-area: cta;" aria-labelledby="cta-heading">
+            <h2 id="cta-heading">Ready to Start Playing?</h2>
+            <p>First introductory session is free. No experience needed, just bring your guitar and your curiosity.</p>
+            <a href="/contact-web3forms.html" class="btn btn-primary">Book My Free Introductory Session</a>
+        </section>
 
-    </div>
+    </section>
   </main>
 
   <footer id="site-footer" class="site-footer"></footer>
