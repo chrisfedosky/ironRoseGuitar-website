@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ — Iron Rose Guitar</title>
-    <meta name="description" content="Find answers to all your guitar lesson questions, from scheduling flexibility in Fitchburg/Madison WI to beginner gear advice.">
-    <meta name="keywords" content="guitar lessons, busy people, online guitar lessons, in-person guitar lessons, Fitchburg, WI, Madison, WI, Verona, WI">
+    <title>FAQ — Iron Rose Guitar Lessons | Fitchburg & Madison, WI</title>
+    <meta name="description" content="Find answers to all your guitar lesson questions. Learn about scheduling flexibility, gear advice, and how to start your creative escape in Fitchburg/Madison WI.">
+    <meta name="keywords" content="guitar lessons, busy people, adult guitar lessons, in-person guitar lessons, online guitar lessons, Fitchburg WI, Madison WI, Verona WI">
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/pages/faq.css">
+
+    <!-- 1. BUSINESS SCHEMA (General Info) -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "MusicTeacher",
-            "name": "YOUR BUSINESS NAME",
+            "name": "Iron Rose Guitar",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Fitchburg",
@@ -24,90 +26,148 @@
             "sameAs": "https://maps.google.com/?cid=8478518634013434643"
         }
     </script>
+
+    <!-- 2. FAQ SCHEMA (Crucial for Rich Snippets) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Do I need my own guitar to start lessons?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Not for our first session! We will map out your goals, diagnose any barriers (technique, rhythm), and establish a clear path forward. If you want advice on an instrument, we can talk about that also! And, if you already have a guitar, bring it along and any music that you are working on right now or wish to."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Am I too old to learn the guitar?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Not at all. In fact, many of my clients have been adults who are picking up the guitar for the first time. Adults bring a unique advantage: focus and a clear sense of 'why' you want to play! We skip the fluff and get straight to the music that moves you, no matter how long it’s been since your last lesson (or if it's never happened at all!)."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How quickly will I see results from lessons?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "My goal is to get you playing music within our first few sessions, giving you quick and satisfying results right away! By the end of your first month, we’ll have built enough momentum for you to perform your songs. We focus entirely on 'small wins,' building confidence one step at a time, so that even 10 minutes of focused daily play translates into real progress on the fretboard."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What times and locations are available?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Life is busy and I get it! Instead of trying to force lessons into your schedule, let's find time that fits naturally around school runs and work commitments. Whether afternoons, evenings or weekends, I offer flexible slots across the week. To make sure we build a rhythm that works for everyone involved, our first session is perfect for mapping out a complete plan."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "In-person or Online—which is better for me?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Both are highly effective, so you can choose what fits your lifestyle best! In-person sessions are preferred. They allow me to provide direct feedback on technique like hand positioning without internet connectivity and machine mismatches. Also, it's good practice to play live in front of someone! Online lessons offer great flexibility and convenience for busy schedules as long as the technology cooperates!"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is your cancellation policy?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Life happens, and I completely understand that plans change! Your lessons are reserved specifically for you, and consistent practice is key to your growth. If you need to cancel or reschedule, let me know at least 24 hours before our scheduled time. Because I cannot fill last-minute openings, lessons canceled with less than 24 hours' notice, as well as missed lessons, will be charged at the full rate. My goal is to stay as flexible as possible while keeping our momentum going!"
+                    }
+                }
+            ]
+        }
+    </script>
 </head>
 <body>
 
 <header id="site-header" class="site-header"></header>
 
 <main>
-    <div class="bento-grid">
-
-        <!-- HERO -->
-        <div class="card card-hero" style="grid-area: hero">
+    <!-- HERO SECTION -->
+    <div class="bento-grid" >
+        <section class="card card-hero" style="grid-area: hero" aria-labelledby="hero-heading">
             <div class="eyebrow">Finding your rhythm, stress-free!</div>
-            <h1>Turn "someday" into a song you can play, today.</h1>
-            <p>If you don’t see the answer here, please send a quick message! I respond within 24 hours to help map out your perfect start. </p>
+            <h1 id="hero-heading">Turn "someday" into a song you can play, today.</h1>
+            <p>If you don’t see the answer here, please send a quick message! I respond within 24 hours to help map out your perfect start.</p>
             <a href="/contact-web3forms.html" class="btn btn-primary">Book My Free Introductory Session</a>
-        </div>
+        </section>
 
-        <!-- Q1 -->
-        <div class="card card-qn" style="grid-area: q1">
+        <!-- Q1 SECTION: GEAR -->
+        <section class="card card-qn" style="grid-area: q1" aria-labelledby="q1-heading">
             <div class="icon-wrapper">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-guitar-icon lucide-guitar my-icon"><path d="m11.9 12.1 4.514-4.514"/><path d="M20.1 2.3a1 1 0 0 0-1.4 0l-1.114 1.114A2 2 0 0 0 17 4.828v1.344a2 2 0 0 1-.586 1.414A2 2 0 0 1 17.828 7h1.344a2 2 0 0 0 1.414-.586L21.7 5.3a1 1 0 0 0 0-1.4z"/><path d="m6 16 2 2"/><path d="M8.23 9.85A3 3 0 0 1 11 8a5 5 0 0 1 5 5 3 3 0 0 1-1.85 2.77l-.92.38A2 2 0 0 0 12 18a4 4 0 0 1-4 4 6 6 0 0 1-6-6 4 4 0 0 1 4-4 2 2 0 0 0 1.85-1.23z"/></svg>
                 <div class="eyebrow">Getting Started & Gear</div>
             </div>
-            <h2>Do I need my own guitar?</h2>
+            <h2 id="q1-heading">Do I need my own guitar?</h2>
             <p>Not for our first session! We will map out your goals, diagnose any barriers (technique, rhythm), and establish a clear path forward. If you want advice on an instrument, we can talk about that also! And, if you already have a guitar, bring it along and any music that you are working on right now or wish to.</p>
-        </div>
+        </section>
 
-        <!-- Q2 -->
-        <div class="card card-qn" style="grid-area: q2">
+        <!-- Q2 SECTION: AGE FEAR -->
+        <section class="card card-qn" style="grid-area: q2" aria-labelledby="q2-heading">
             <div class="icon-wrapper">
                 <svg class="my-icon" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-480v80q0 66 47 113t113 47q66 0 113-47t47-113v-80H320Zm160 180q-42 0-71-29t-29-71v-20h200v20q0 42-29 71t-71 29ZM272.5-652.5Q243-625 231-577l58 14q6-26 20-41.5t31-15.5q17 0 31 15.5t20 41.5l58-14q-12-48-41.5-75.5T340-680q-38 0-67.5 27.5Zm280 0Q523-625 511-577l58 14q6-26 20-41.5t31-15.5q17 0 31 15.5t20 41.5l58-14q-12-48-41.5-75.5T620-680q-38 0-67.5 27.5ZM324-111.5Q251-143 197-197t-85.5-127Q80-397 80-480t31.5-156Q143-709 197-763t127-85.5Q397-880 480-880t156 31.5Q709-817 763-763t85.5 127Q880-563 880-480t-31.5 156Q817-251 763-197t-127 85.5Q563-80 480-80t-156-31.5ZM480-480Zm227 227q93-93 93-227t-93-227q-93-93-227-93t-227 93q-93 93-93 227t93 227q93 93 227 93t227-93Z"/></svg>
                 <div class="eyebrow">Your journey starts now</div>
             </div>
-            <h2>Am I too old to learn?</h2>
-            <p>Not at all. In fact, many of my clients have been adults who are picking up the guitar for the first time. Adults bring a unique advantage: focus and a clear sense of "why" you want to play! We skip the fluff and get straight to the music that moves you, no matter how long it’s been since your last lesson (or if it's never happened at all!)</p>
-        </div>
+            <h2 id="q2-heading">Am I too old to learn?</h2>
+            <p>Not at all. In fact, many of my clients have been adults who are picking up the guitar for the first time. Adults bring a unique advantage: focus and a clear sense of "why" you want to play! We skip the fluff and get straight to the music that moves you, no matter how long it’s been since your last lesson (or if it's never happened at all!).</p>
+        </section>
 
-        <!-- Q3 -->
-        <div class="card card-qn" style="grid-area: q3">
+        <!-- Q3 SECTION: RESULTS -->
+        <section class="card card-qn" style="grid-area: q3" aria-labelledby="q3-heading">
             <div class="icon-wrapper">
                 <svg class="my-icon" viewBox="0 -960 960 960" fill="currentColor"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm285 93q35-35 35-85v-240H360v240q0 50 35 85t85 35q50 0 85-35Zm115-93q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
                 <div class="eyebrow">Quick wins, lasting skills</div>
             </div>
-            <h2>How quickly will I see results?</h2>
+            <h2 id="q3-heading">How quickly will I see results?</h2>
             <p>My goal is to get you playing music within our first few sessions, giving you quick and satisfying results right away! By the end of your first month, we’ll have built enough momentum for you to perform your songs. We focus entirely on "small wins," building confidence one step at a time, so that even 10 minutes of focused daily play translates into real progress on the fretboard.</p>
-        </div>
+        </section>
 
-        <!-- Q4 -->
-        <div class="card card-qn" style="grid-area: q4">
+        <!-- Q4 SECTION: SCHEDULING -->
+        <section class="card card-qn" style="grid-area: q4" aria-labelledby="q4-heading">
             <div class="icon-wrapper">
                 <svg class="my-icon" viewBox="0 -960 960 960" fill="currentColor"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v255l-80 80v-175H200v400h248l80 80H200Zm0-560h560v-80H200v80Zm0 0v-80 80ZM662-60 520-202l56-56 85 85 170-170 56 57L662-60Z"/></svg>
                 <div class="eyebrow">Fitting it Into Your Life</div>
             </div>
-            <h2>What times are available?</h2>
-            <p> Life is busy and I get it! Instead of trying to force lessons into your schedule, let's find time that fits naturally around school runs and work commitments. Whether afternoons, evenings or weekends, I offer flexible slots across the week. To make sure we build a rhythm that works for everyone involved, our first session is perfect for mapping out a complete plan.</p>
-        </div>
+            <h2 id="q4-heading">What times are available?</h2>
+            <p>Life is busy and I get it! Instead of trying to force lessons into your schedule, let's find time that fits naturally around school runs and work commitments. Whether afternoons, evenings or weekends, I offer flexible slots across the week. To make sure we build a rhythm that works for everyone involved, our first session is perfect for mapping out a complete plan.</p>
+        </section>
 
-        <!-- Q5 -->
-        <div class="card card-qn" style="grid-area: q5">
+        <!-- Q5 SECTION: FORMAT -->
+        <section class="card card-qn" style="grid-area: q5" aria-labelledby="q5-heading">
             <div class="icon-wrapper">
                 <svg class="my-icon" viewBox="0 -960 960 960" fill="currentColor"><path d="M80-160q-33 0-56.5-23.5T0-240h160q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240h160q0 33-23.5 56.5T880-160H80Zm428.5-51.5Q520-223 520-240t-11.5-28.5Q497-280 480-280t-28.5 11.5Q440-257 440-240t11.5 28.5Q463-200 480-200t28.5-11.5ZM160-320h640v-440H160v440Zm0 0v-440 440Z"/></svg>
                 <div class="eyebrow">Choosing your ideal setup</div>
             </div>
-            <h2>In-person or Online—which is better?</h2>
+            <h2 id="q5-heading">In-person or Online—which is better?</h2>
             <p>Both are highly effective, so you can choose what fits your lifestyle best! In-person sessions are preferred. They allow me to provide direct feedback on technique like hand positioning without internet connectivity and machine mismatches. Also, it's good practice to play live in front of someone! Online lessons offer great flexibility and convenience for busy schedules as long as the technology cooperates!</p>
-        </div>
+        </section>
 
-        <!-- Q6 -->
-        <div class="card card-qn" style="grid-area: q6">
+        <!-- Q6 SECTION: POLICY -->
+        <section class="card card-qn" style="grid-area: q6" aria-labelledby="q6-heading">
             <div class="icon-wrapper">
                 <svg class="my-icon" viewBox="0 -960 960 960" fill="currentColor"><path d="M475-160q4 0 8-2t6-4l328-328q12-12 17.5-27t5.5-30q0-16-5.5-30.5T817-607L647-777q-11-12-25.5-17.5T591-800q-15 0-30 5.5T534-777l-11 11 74 75q15 14 22 32t7 38q0 42-28.5 70.5T527-522q-20 0-38.5-7T456-550l-75-74-175 175q-3 3-4.5 6.5T200-435q0 8 6 14.5t14 6.5q4 0 8-2t6-4l136-136 56 56-135 136q-3 3-4.5 6.5T285-350q0 8 6 14t14 6q4 0 8-2t6-4l136-135 56 56-135 136q-3 2-4.5 6t-1.5 8q0 8 6 14t14 6q4 0 7.5-1.5t6.5-4.5l136-135 56 56-136 136q-3 3-4.5 6.5T454-180q0 8 6.5 14t14.5 6Zm-1 80q-37 0-65.5-24.5T375-166q-34-5-57-28t-28-57q-34-5-56.5-28.5T206-336q-38-5-62-33t-24-66q0-20 7.5-38.5T149-506l232-231 131 131q2 3 6 4.5t8 1.5q9 0 15-5.5t6-14.5q0-4-1.5-8t-4.5-6L398-777q-11-12-25.5-17.5T342-800q-15 0-30 5.5T285-777L144-635q-9 9-15 21t-8 24q-2 12 0 24.5t8 23.5l-58 58q-17-23-25-50.5T40-590q2-28 14-54.5T87-692l141-141q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l11 11 11-11q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l169 169q23 23 35 53t12 61q0 31-12 60.5T873-437L545-110q-14 14-32.5 22T474-80Zm-99-560Z"/></svg>
                 <div class="eyebrow">Commitment & Flexibility</div>
             </div>
-            <h2>What's your Cancellation Policy?</h2>
-            <p>Life happens, and I completely understand that plans change! Your lessons are reserved specifically for you, and consistent practice is key to your growth. If you need to cancel or reschedule, let me know at least <strong>24 hours</strong> before our scheduled time. Because I cannot fill last-minute openings, lessons canceled with less than 24 hours' notice, as well as missed lessons, will be charged at the full rate. My goal is to stay as flexible as possible while keeping our momentum going!</p>
-        </div>
+            <h2 id="q6-heading">What's your Cancellation Policy?</h2>
+            <p>Life happens, and I completely understand that plans change! Your lessons are reserved specifically for you, and consistent practice is key to your growth. If you need to cancel or reschedule, let me know at least <strong class="highlight-policy">24 hours</strong> before our scheduled time. Because I cannot fill last-minute openings, lessons canceled with less than 24 hours' notice, as well as missed lessons, will be charged at the full rate. My goal is to stay as flexible as possible while keeping our momentum going!</p>
+        </section>
 
-        <!-- CTA -->
-        <div class="card card-cta" style="grid-area: cta">
-            <h2>Still have questions?</h2>
+        <!-- CTA SECTION -->
+        <section class="card card-cta" style="grid-area: cta" aria-labelledby="cta-heading">
+            <h2 id="cta-heading">Still have questions?</h2>
             <p>Send me a message and I'll reply within 24 hours. Or just book the free intro session and we can talk through anything then.</p>
-            <div>
+            <div class="cta-buttons">
                 <a href="/contact-web3forms.html" class="btn btn-primary">Send me a message →</a>
+                <a href="/contact-web3forms.html" class="btn btn-secondary">Book Free Intro Session</a>
             </div>
-        </div>
+        </section>
 
     </div>
 </main>
