@@ -33,17 +33,18 @@
 <main>
     <div class="bento-grid">
 
-        <!-- HERO -->
-        <div class="card card-hero" style="grid-area: hero">
+        <!-- HERO SECTION (The Offer) -->
+        <section class="card card-hero" style="grid-area: hero" aria-labelledby="hero-heading">
             <div class="eyebrow">Let's get started</div>
-            <h1>Ready to make music on <em>your</em> terms? </h1>
-            <h2>Start with a free introductory session today!</h2>
+            <!-- H1 is now more localized and action-oriented for SEO -->
+            <h1 id="hero-heading">Start Your Guitar Journey in Fitchburg & Madison, WI</h1>
+            <h2>Ready to make music on <em class="highlight">your</em> terms?</h2>
             <p>Share your musical ideas, any questions you have, any music you want to play. I will reply within 24 hours with guidance on how we can start this exciting journey for you. Absolutely no pressure!</p>
-        </div>
+        </section>
 
-        <!-- FORM -->
-        <div class="card card-form" style="grid-area: form">
-            <h2>What’s your musical goal? (No wrong answers!)</h2>
+        <!-- FORM SECTION (The Conversion Point) -->
+        <section class="card card-form" style="grid-area: form" aria-labelledby="form-heading">
+            <h2 id="form-heading">What’s your musical goal? (No wrong answers!)</h2>
 
             <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
 
@@ -55,20 +56,15 @@
                 </div>
 
                 <!-- Name -->
-                <!-- Netlify-Name div clone-->
                 <div class="form-group">
-                    <label class="form-label" for="name">
-                        Your name <span class="form-required" aria-hidden="true">*</span>
-                    </label>
+                    <label class="form-label" for="name">Your name <span class="form-required" aria-hidden="true">*</span></label>
                     <input class="form-input" id="name" type="text" name="name" placeholder="What should I call you?" autocomplete="name" required>
                     <span class="form-error" id="name-error" role="alert"></span>
                 </div>
 
                 <!-- Email -->
                 <div class="form-group">
-                    <label class="form-label" for="email">
-                        Email address <span class="form-required" aria-hidden="true">*</span>
-                    </label>
+                    <label class="form-label" for="email">Email address <span class="form-required" aria-hidden="true">*</span></label>
                     <input class="form-input" id="email" type="email" name="email" placeholder="you@example.com" autocomplete="name" required>
 
                     <span class="form-error" id="email-error" role="alert"></span>
@@ -76,25 +72,13 @@
 
                 <!-- Phone -->
                 <div class="form-group">
-                    <label class="form-label" for="phone">
-                        Phone number <span class="form-optional">(optional. for those who prefer to call or text!)</span>
-                    </label>
-                    <input
-                        class="form-input"
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="(608) 555-0123"
-                        autocomplete="tel"
-                        maxlength="14"
-                    >
+                    <label class="form-label" for="phone">Phone number <span class="form-optional">(optional. for those who prefer to call or text!)</span></label>
+                    <input class="form-input" type="tel" id="phone" name="phone" placeholder="(608) 555-0123" autocomplete="tel" maxlength="14">
                 </div>
 
                 <!-- Message -->
                 <div class="form-group">
-                    <label class="form-label" for="message">
-                        Message me! <span class="form-optional">(optional. What's on your mind?)</span>
-                    </label>
+                    <label class="form-label" for="message">Message me! <span class="form-optional">(optional. What's on your mind?)</span></label>
                     <textarea class="form-textarea" id="message" name="message" rows="4" placeholder="Tell me what moves you, the songs, the genres, or any questions about getting started..." required></textarea>
                 </div>
 
@@ -105,51 +89,47 @@
 
             </form>
             <div class="submit-btn-privacy-snippet asterisk">
-                <p>
-                    🔒 Your privacy matters to me. Your details are safe and will never be shared or spammed.
-                </p>
+                <p>🔒 Your privacy matters to me. Your details are safe and will never be shared or spammed.</p>
             </div>
-        </div>
+        </section>
 
-        <!-- WHAT HAPPENS NEXT 3 STEPS -->
-        <div class="card card-contact-steps" style="grid-area: expect;">
+        <!-- WHAT HAPPENS NEXT SECTION (The Process) -->
+        <section class="card card-contact-steps" style="grid-area: expect;" aria-labelledby="steps-heading">
             <div class="eyebrow">What happens next</div>
 
-            <h2>Three easy steps!</h2>
+            <h2 id="steps-heading">Three easy steps to start playing</h2>
             <div class="expect-steps">
                 <div class="expect-step">
                     <div class="step-number">1</div>
                     <div>
-                        <strong>A Quick Conversation: </strong>
+                        <strong class="step-title">A Quick Conversation:</strong>
                         <p>I’ll respond within 24 hours to say hello and find out more about you and your goals. This starts you down the path!</p>
                     </div>
                 </div>
                 <div class="expect-step">
                     <div class="step-number">2</div>
                     <div>
-                        <strong>Fitting Your Life:</strong>
-                        <p>Together we'll schedule the initial introductory session when we will map out your goals, get a  baseline of your musical development so far, and establish a clear path forward.</p>
+                        <strong class="step-title">Fitting Your Life:</strong>
+                        <p>Together we'll schedule the initial introductory session when we will map out your goals, get a baseline of your musical development so far, and establish a clear path forward.</p>
                     </div>
                 </div>
                 <div class="expect-step">
                     <div class="step-number">3</div>
                     <div>
-                        <strong>The First Introductory Session (Free):</strong>
+                        <strong class="step-title">The First Introductory Session (Free):</strong>
                         <p>Our initial session is zero-pressure and completely free of charge. It’s a chance for us both to discuss your experience and goals and to get those fingers moving!</p>
                     </div>
                 </div>
-                <div class="expect-step-note" >
-                    <p class="asterisk">
-                        *Please note: I maintain a 24-hour cancellation policy for all scheduled sessions.
-                    </p>
+                <div class="expect-step-note">
+                    <p class="asterisk">*Please note: I maintain a 24-hour cancellation policy for all scheduled sessions.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- NOT SURE YET -->
-        <div class="card card-trust-mini" style="grid-area: trust;">
+        <!-- NOT SURE YET SECTION (The Trust Builder) -->
+        <section class="card card-trust-mini" style="grid-area: trust;" aria-labelledby="trust-heading">
             <div class="eyebrow">Take your time</div>
-            <h2>Still mulling it over?</h2>
+            <h2 id="trust-heading">Still mulling it over?</h2>
             <p><strong>I Totally understand.</strong> Starting something new takes a moment to process! Feel free to <a href="/faq.html">browse the FAQ</a> or <a href="/about.html">read my story on the About page</a> first. I’m here whenever you feel ready to take that next step.</p>
 
             <div class="trust-mini">
@@ -194,7 +174,7 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
     </div>
 </main>
