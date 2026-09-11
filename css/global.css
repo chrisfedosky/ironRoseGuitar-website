@@ -1,6 +1,51 @@
 /* ── 1. Font ── */
 /*-- Apply Lora or other  font locally NO URL */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');*/
+
+/* ==========================================
+   PLUS JAKARTA SANS (Weights: 400 & 600)
+   ========================================== */
+
+/* Regular / Body / Accents (400) */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('assets/fonts/plus-jakarta-sans-v12-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Semi-Bold / Headings (600) */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('assets/fonts/plus-jakarta-sans-v12-latin-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================
+   LORA (Weights: 400 & 700)
+   ========================================== */
+
+/* Regular / Body / Secondary Headers (400) */
+@font-face {
+  font-family: 'Lora';
+  src: url('assets/fonts/lora-v37-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold / Primary Headlines (700) */
+@font-face {
+  font-family: 'Lora';
+  src: url('assets/fonts/lora-v37-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 /* ── 2. Reset ── */
 *, *::before, *::after {
@@ -60,20 +105,28 @@ html {
 }
 
 body {
-  /* Should this match the OG font? maybe via @font face? ¡Lora is not in the assets folder!*/
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.7;
+  font-size: clamp(1.25rem, 4vw, 1.35rem);
   background: var(--bg-dark);
   color: var(--text);
-  line-height: 1.6;
+
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  font-size: clamp(1rem, 4vw, 1.23rem);
+
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* ¡Lora is not in the assets folder! */
+/* Plus Jakarta or Lora? Weight? */
 h1, h2, h3 {
-  font-family: 'Lora', serif;
+  font-family: 'Lora', Georgia, sans-serif;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -84,15 +137,16 @@ h1 {
 
 h2 {
   font-size: clamp(1.3rem, 3vw, 1.85rem);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h3 {
   font-size: clamp(1.1rem, 2vw, 1.4rem);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 p  {
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
   font-size: clamp(0.95rem, 1.5vw, 1.05rem);
   color: var(--text);
   line-height: 1.75;
@@ -155,7 +209,7 @@ main {
   background: var(--bg-light);
 }
 .site-name {
-  font-family: 'Lora', serif;
+  font-family: 'Lora', Georgia, serif;
   font-size: 1.15rem;
   font-weight: 700;
   display: flex;
@@ -477,15 +531,6 @@ main {
 }
 
 .soundcloud-iframe {}
-
-
-/* Mobile default: show mobile embed, hide desktop embed */
-/*.soundcloud-desktop {*/
-/*  display: none !important;*/
-/*}*/
-/*.soundcloud-mobile {*/
-  /*display: block !important;*/
-/*}*/
 
 /* ── Card-Trust ── */
 .card-trust {
@@ -989,7 +1034,7 @@ ul {
 }
 
 .footer-name {
-  font-family: 'Lora', serif;
+  font-family: 'Lora', Georgia, serif;
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--white);
