@@ -1,0 +1,14 @@
+# Iron Rose Guitar
+
+> Professional in-person guitar lessons and package plans catering to students of all skill levels across Madison, Verona, and Fitchburg, WI.
+
+## Core Pages
+
+- [Homepage](https://ironroseguitar.com)
+- [Guitar Lesson Packages](https://ironroseguitar.com/lessons.html)
+- [Frequently Asked Questions](https://ironroseguitar.com/faq.html)
+
+## Information
+
+- [Privacy Policy](https://ironroseguitar.com/privacy.html)
+- [Terms and Conditions](https://ironroseguitar.com/terms.html)
