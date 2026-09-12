@@ -530,8 +530,6 @@ main {
   font-size: 1.15rem;
 }
 
-.soundcloud-iframe {}
-
 /* ── Card-Trust ── */
 .card-trust {
   background: var(--bg-light);
