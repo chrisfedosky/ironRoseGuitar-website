@@ -517,7 +517,7 @@ main {
 .list-item-benefit {}
 
 .soundcloud-wrapper {
-  background-color: var(--primary-light);
+  background-color: var(--primary);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -917,7 +917,7 @@ ul {
 }
 
 .btn-secondary {
-  background: var(--primary-light);
+  background: var(--primary);
   color: var(--white);
   border-color: var(--accent-secondary);
 }
@@ -972,7 +972,7 @@ ul {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--primary-light);
+  color: var(--primary);
   margin-bottom: 0.35rem;
 
 }
@@ -1070,7 +1070,9 @@ ul {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  color: var(--white) !important;
   font-size: 1.10rem;
+
 }
 
 address {
