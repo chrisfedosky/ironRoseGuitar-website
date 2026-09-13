@@ -783,6 +783,16 @@ main {
   gap: .25rem;
 }
 
+.card-technical ul {
+  color: var(--text);
+  font-size: 1.15rem;
+  padding-left: 2rem;
+}
+
+.card-technical li + li {
+  margin-top: 0.5rem;
+}
+
 .privacy-container p, .terms-container p {
   color: var(--text);
   font-size: 1.15rem;
