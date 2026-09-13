@@ -145,27 +145,26 @@
             <span><strong>The Composer-Songwriter:</strong> Learn to accompany yourself and bring your own stories to life on the strings. <em>Write</em> the music that moves you!</span>
           </li>
         </ul>
+      </section>
 
-            <!-- SoundCloud button div -->
-            <div class="card soundcloud-wrapper">
-                <!-- TODO: rewrite this, it sounds like AI -->
-                <p>"I’ve spent my career in every corner of the music world, from the groove of the upright bass to the precision of professional studio production and original composition. I don't just teach guitar: I share the secrets of how music actually works."</p>
-                <!-- todo find a new spot for the audio examples that is less nested -->
-                <!-- Audio Player -->
-                <div class="audio-player-card">
-                    <div class="audio-info">
-                        <span class="audio-label">Studio Recoding Feature</span>
-                        <h3 class="audio-title">NYC Recordings Medley</h3>
-                    </div>
-                    <audio controls preload="none">
-                        <source src="/assets/audio/nyc-medley-squiggletone-copy.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-                <!-- Audio Player -->
-
-            </div>
-        </section>
+      <section>
+          <!-- Move Audio player to its own card below this div -->
+          <div class="card soundcloud-wrapper" style="grid-area: audio">
+              <!-- TODO: rewrite this, it sounds like AI -->
+              <p>"I’ve spent my career in every corner of the music world, from the groove of the upright bass to the precision of professional studio production and original composition. I don't just teach guitar: I share the secrets of how music actually works."</p>
+              <!-- Audio Player -->
+              <div class="audio-player-card">
+                  <div class="audio-info">
+                      <span class="audio-label">Studio Recoding Feature</span>
+                      <h3 class="audio-title">NYC Recordings Medley</h3>
+                  </div>
+                  <audio controls preload="none">
+                      <source src="/assets/audio/nyc-medley-squiggletone-copy.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                  </audio>
+              </div>
+          </div>
+      </section>
 
       <!-- LOGISTICS -->
       <section class="card card-info" style="grid-area: faq">
