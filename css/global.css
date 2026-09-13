@@ -512,21 +512,24 @@ main {
 
 .list-item-benefit {}
 
-.soundcloud-wrapper {
-  /*background-color: var(--primary);*/
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: space-around;*/
-  /*align-items: center;*/
-  /*gap: 0.75rem;*/
-}
-
-.soundcloud-wrapper p {
-  /*color: var(--white);*/
-  /*font-size: 1.15rem;*/
-}
-
 /* ── Audio Player BETA ── */
+
+.card-audio {
+  /*grid-area: audio;*/
+  background: var(--bg-light);
+  border-color: var(--primary-dark);
+  /*min-height: 260px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: .35rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-audio p {
+  color: var(--text);
+}
 
 .audio-player-card {
 
