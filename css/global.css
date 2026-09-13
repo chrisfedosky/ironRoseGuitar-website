@@ -530,6 +530,25 @@ main {
   font-size: 1.15rem;
 }
 
+/* ── Audio Player BETA ── */
+
+.audio-player-card {
+
+}
+
+.audio-info span {
+
+}
+
+.audio-label {
+
+}
+
+.audio-title {
+
+}
+
+
 /* ── Card-Trust ── */
 .card-trust {
   background: var(--bg-light);
