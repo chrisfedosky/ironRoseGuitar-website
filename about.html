@@ -86,25 +86,28 @@
               </figcaption>
             </figure>
           </div>
-          <div class="card soundcloud-wrapper">
-            <p>
-              "I’ve spent my career in every corner of the music world, from the groove of the upright bass to the precision of professional studio production and original composition. I don't just teach guitar; I share the secrets of how music actually works."
-            </p>
-              <!-- Soundcloud Swapper -->
-              <div class="audio-player-card">
-                  <div class="audio-info">
-                      <span class="audio-label">Studio Feature</span>
-                      <h3 class="audio-title">NYC Recordings Medley</h3>
-                  </div>
-                  <audio controls preload="none">
-                      <source src="/assets/audio/nyc-medley-squiggletone-copy.mp3" type="audio/mpeg">
-                      Your browser does not support the audio element.
-                  </audio>
-              </div>
-              <!-- Soundcloud Swapper -->
-          </div>
+            <!-- move to new section below -->
+<!--          <div class="card card-audio">-->
+<!--            <p>-->
+<!--              "I’ve spent my career in every corner of the music world, from the groove of the upright bass to the precision of professional studio production and original composition. I don't just teach guitar; I share the secrets of how music actually works."-->
+<!--            </p>-->
+<!--              &lt;!&ndash; Soundcloud Swapper &ndash;&gt;-->
+<!--              <div class="audio-player-card">-->
+<!--                  <div class="audio-info">-->
+<!--                      <span class="audio-label">Studio Feature</span>-->
+<!--                      <h3 class="audio-title">NYC Recordings Medley</h3>-->
+<!--                  </div>-->
+<!--                  <audio controls preload="none">-->
+<!--                      <source src="/assets/audio/nyc-medley-squiggletone-copy.mp3" type="audio/mpeg">-->
+<!--                      Your browser does not support the audio element.-->
+<!--                  </audio>-->
+<!--              </div>-->
+<!--              &lt;!&ndash; Soundcloud Swapper &ndash;&gt;-->
+<!--          </div>-->
         </div>
         </section>
+
+
 
       <!-- CREDENTIALS -->
       <section class="card card-bullet" style="grid-area: creds;" aria-labelledby="creds-heading">
@@ -158,11 +161,30 @@
                    loading="lazy"
                    style="max-width: 100%; height: auto;">
             </picture>
+          </div>
         </div>
-      </div>
-
       </section>
 
+        <!-- Audio -->
+        <section>
+            <div class="card card-audio" style="grid-area: audio">
+                <div class="eyebrow">Listen to some recorded examples!</div>
+                <h2>Listen to some Music!</h2>
+                <!-- TODO: rewrite this, it sounds like AI and is wide of the mark -->
+                <p>"I’ve spent my career in every corner of the music world, from the groove of the upright bass to the precision of professional studio production and original composition. I don't just teach guitar: I share the secrets of how music actually works."</p>
+                <!-- Audio Player -->
+                <div class="audio-player-card">
+                    <div class="audio-info">
+                        <span class="audio-label">Studio Recoding Feature</span>
+                        <h3 class="audio-title">NYC Recordings Medley</h3>
+                    </div>
+                    <audio controls preload="none" role="application" aria-label="Audio Player">
+                        <source src="/assets/audio/nyc-medley-squiggletone-copy.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
         <!-- 4. TEACHING PHILOSOPHY SECTION (De-risking the Experience) -->
         <section class="card card-info" style="grid-area: values;" aria-labelledby="philosophy-heading">
             <div class="eyebrow">Teaching Philosophy</div>

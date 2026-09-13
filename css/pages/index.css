@@ -1,13 +1,13 @@
-/* Add these styles to your index.css file */
-.bento-grid {
-  display: grid;
-  gap: var(--gap);
-  width: 100%;
-  max-width: var(--max-width);
-  margin-inline: auto;
-  /* grid-template-columns and grid-template-areas
-     live in the page CSS files only */
-}
+/*!* Add these styles to your index.css file *!*/
+/*.bento-grid {*/
+/*  display: grid;*/
+/*  gap: var(--gap);*/
+/*  width: 100%;*/
+/*  max-width: var(--max-width);*/
+/*  margin-inline: auto;*/
+/*  !* grid-template-columns and grid-template-areas*/
+/*     live in the page CSS files only *!*/
+/*}*/
 
 /* Mobile: single column */
 .bento-grid {
