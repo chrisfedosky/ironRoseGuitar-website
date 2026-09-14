@@ -1,15 +1,3 @@
-/*!* Add these styles to your index.css file *!*/
-/*.bento-grid {*/
-/*  display: grid;*/
-/*  gap: var(--gap);*/
-/*  width: 100%;*/
-/*  max-width: var(--max-width);*/
-/*  margin-inline: auto;*/
-/*  !* grid-template-columns and grid-template-areas*/
-/*     live in the page CSS files only *!*/
-/*}*/
-
-/* Mobile: single column */
 .bento-grid {
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -17,7 +5,6 @@
     "review"
     "trust"
     "benefit"
-    "audio"
     "faq"
     "cta";
 }
@@ -31,7 +18,6 @@
       "review review review"
       "trust   trust trust"
       "benefit benefit benefit"
-      "audio audio audio"
       "faq   faq  faq"
       "cta cta cta";
   }
@@ -46,7 +32,6 @@
       "review review review review"
       "trust trust trust trust"
       "benefit benefit benefit benefit"
-      "audio audio audio audio"
       "faq faq faq faq"
       "cta cta cta cta";
   }
