@@ -1398,7 +1398,7 @@ input[type="password"] {
   gap: 0.15rem;
 }
 .trust-mini strong {
-  font-size: .9rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--primary-dark);
   font-family: 'Lora', serif;
@@ -1406,7 +1406,7 @@ input[type="password"] {
 }
 
 .trust-mini span   {
-  font-size: 1rem;
+  font-size: .8rem;
   color: var(--text-muted);
 }
 
