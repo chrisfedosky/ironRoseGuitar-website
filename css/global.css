@@ -534,9 +534,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*gap: .35rem;*/
-  /*position: relative;*/
-  /*overflow: hidden;*/
+  gap: .35rem;
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: 100%;/* Ensure the container takes full height */
 }
@@ -553,15 +553,19 @@ main {
 .audio-player-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: .35rem;
   width: 100%;
   height: 100%; /* Ensure the card takes full height */
 }
 
-.audio-info span {
-
+.audio-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .audio-label {
@@ -598,13 +602,13 @@ main {
 
 .trust-stat strong {
   display: block;
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 800;
   color: var(--primary-dark);
   font-family: 'Lora', serif;
 }
 .trust-stat span {
-  font-size: 0.80rem;
+  font-size: 1rem;
   color: var(--text);
 }
 
@@ -1402,7 +1406,7 @@ input[type="password"] {
 }
 
 .trust-mini span   {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--text-muted);
 }
 
