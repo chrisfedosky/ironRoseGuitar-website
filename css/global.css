@@ -73,6 +73,8 @@ img, video {
   --accent-secondary-lighter: hsl(258, 51%, 85%);
   --tertiary:         hsl(25, 75%, 45%);
   --tertiary-light:   hsl(25, 75%, 65%);
+  --blue-highlight:  hsl(207, 100%, 70%);
+  --blue-mid:         hsl(207, 100%, 50%);
   --bg-light:         hsl(2, 79%, 97%);
   --bg:               hsl(2, 79%, 93%);
   --bg-dark:          hsl(2, 79%, 87%);
