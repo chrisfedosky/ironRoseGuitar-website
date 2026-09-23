@@ -75,9 +75,13 @@ img, video {
   --tertiary-light:   hsl(25, 75%, 65%);
   --blue-highlight:  hsl(207, 100%, 70%);
   --blue-mid:         hsl(207, 100%, 50%);
+  --blue-dark:         hsl(207, 100%, 20%);
   --bg-light:         hsl(2, 79%, 97%);
   --bg:               hsl(2, 79%, 93%);
   --bg-dark:          hsl(2, 79%, 87%);
+  --bg-blu-light:     hsl(207, 100%, 90%);
+  --bg-blu:           hsl(207, 100%, 77%);
+  --bg-blu-dark:      hsl(207, 100%, 57%);
   --text:             hsl(0, 0%, 0%);
   --text-muted:       hsl(2, 12%, 43%);
   --white:        hsl(0, 0%, 100%);
@@ -359,6 +363,14 @@ main {
   /*text-align: center;*/
 }
 
+.hero-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: .85rem;
+}
+
 /* ── Card-Feature ── */
 
 .card-feature {
@@ -524,7 +536,7 @@ main {
 /* ── Audio Player BETA ── */
 
 .card-audio {
-  background: var(--primary-lighter);
+  background: var(--bg-blu-light);
   border-color: var(--primary-dark);
 
   font-family: 'Plus Jakarta Sans', Arial, sans-serif;
@@ -949,6 +961,7 @@ ul {
   /*how smooth the buttons?*/
   transition: background-color 0.2s ease-in-out, transform 0.1s ease-out;
   width: fit-content;
+  text-wrap: nowrap;
 }
 
 .btn:hover  {
@@ -974,6 +987,20 @@ ul {
   background: var(--primary-light);
   color: var(--text);
   border-color: var(--accent-secondary-light)
+}
+
+.btn-primary2 {
+  background: var(--blue-highlight);
+  color: var(--white);
+  border-color: var(--blue-dark);
+}
+
+.btn-primary2:hover {
+  opacity: 0.88;
+  text-decoration: none;
+  background: var(--accent-secondary-light);
+  color: var(--text);
+  border-color: var(--tertiary)
 }
 
 .btn-secondary {
@@ -1460,6 +1487,14 @@ input[type="password"] {
     margin: 0;
   }
 
+  .hero-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: .35rem;
+  }
+
   /* Add Lessons and About links */
   .nav-links li:nth-child(2) a,
   .nav-links li:nth-child(3) a {
@@ -1467,6 +1502,15 @@ input[type="password"] {
   }
 }
 
+@media (min-width: 640px) {
+  .hero-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: .35rem;
+  }
+}
 
 /*-- is this necessary? --*/
 @media (min-width: 1050px) {
